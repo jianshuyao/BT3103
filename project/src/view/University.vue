@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <NavBar></NavBar>
-    <router-view/>
+    <div>
+        <img src="../assets/ucsb.png" class="img-thumbnail">
+    </div>
   </div>
 </template>
 
 <script>
-import NavBar from './components/NavBar.vue'
 
 export default {
   name: 'App',
   components: {
-    NavBar
   }
 }
 </script>
