@@ -2,17 +2,14 @@
   <div id="app">
     <div>
         <img src="../assets/ucsb.png" class="img-thumbnail">
+        
     </div>
   </div>
 </template>
 
 <script>
 
-export default {
-  name: 'App',
-  components: {
-  }
-}
+
 </script>
 
 <style>
