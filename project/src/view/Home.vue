@@ -1,7 +1,8 @@
 <template>
+
   <div>
-    <div class="container">
-      <img src="../assets/home_image.jpeg" class="image" style="width:100%;">
+    <div class="home_container">
+      <img src="../assets/home_image.jpeg" class="image">
       <div class="title">
         <i class="fa fa-globe"></i>
         Exploring the Globe  
@@ -19,16 +20,19 @@
       </div>
     </div>
   </div>
+
 </template>
 
 <script>
+  
 export default {
   name: 'Home' //this is the name of the component
 }
 </script>
+
 <style>
 /* Container holding the image and the text */
-.container {
+.home_container {
   position: relative;
   text-align: center;
   color: white;
@@ -60,19 +64,19 @@ export default {
   padding: 15px 42px;
 }
 
-.container:hover .image {
+.home_container:hover .image {
   opacity: 0.3;
 }
 
-.container:hover .title {
+.home_container:hover .title {
   color:black
 }
 
-.container:hover .about {
+.home_container:hover .about {
   color:black
 }
 
-.container:hover .btn-middle {
+.home_container:hover .btn-middle {
   opacity: 1;
 }
 
@@ -82,7 +86,8 @@ export default {
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
-  object-fit: cover;
+  object-fit: contain;
+  width: 100%;
 }
 
 .centered {

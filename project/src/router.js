@@ -24,5 +24,6 @@ export default[
     {
       path: '/Contact',
       component: Contact
-    }
+    },
+    { path: '*', redirect: '/' }
 ]
