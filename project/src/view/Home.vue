@@ -5,7 +5,7 @@
       <img src="../assets/home_image.jpeg" class="image">
       <div class="title">
         <i class="fa fa-globe"></i>
-        Exploring the Globe  
+        Discovering the Globe  
       </div>
       <div class="about">
         Explore new vistas on the Student Exchange Programme
@@ -13,8 +13,8 @@
       <div class="centered">
         <router-link to='/University'>
           <button class="btn btn-success btn-middle">
-            <i class="fa fa-paper-plane"></i>
-            Search Program
+            <i class="fa fa-paper-plane "></i>
+            Search Programme
           </button>
         </router-link>
       </div>
@@ -47,6 +47,10 @@ export default {
   transform: translate(-50%, -50%);
 }
 
+.title i{
+    margin-right: 8px;
+}
+
 .about {
   margin: auto;
   text-align: center;
@@ -59,9 +63,14 @@ export default {
 
 .btn-middle {
   transition: .5s ease;
+  float:left;
   opacity: 0.5;
   font-size: 150%;
   padding: 15px 42px;
+}
+
+.btn-middle i{
+    margin-right: 10px;
 }
 
 .home_container:hover .image {
