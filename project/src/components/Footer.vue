@@ -59,7 +59,7 @@ export default {
   margin-right:0;
   border-radius:100%;
   background-color:#828282;
-  color:#fff
+  color:#fff;
 }
 .copyright-text
 {
@@ -103,7 +103,7 @@ export default {
 .social-icons a:active,.social-icons a:focus,.social-icons a:hover
 {
   color:#fff;
-  background-color:#7993a4
+  background-color:#7993a4;
 }
 .social-icons.size-sm a
 {

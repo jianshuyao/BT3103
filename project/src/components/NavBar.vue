@@ -8,7 +8,7 @@
         <ul class="nav navbar-nav">
           <li>
             <router-link class="nav-link" to="/Home" exact>
-              <i class="fa fa-fw fa-home"></i>
+              <i class="fa fa-home" aria-hidden="true" ></i>
               Home
             </router-link>
           </li>
