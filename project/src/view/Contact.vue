@@ -82,5 +82,8 @@
   margin-bottom: 3rem;
   color: black;
 }
+.text-container{
+    text-align: center;
+}
 
 </style>
