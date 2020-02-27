@@ -83,4 +83,11 @@
   color: black;
 }
 
+.text-container{
+    text-align: center;
+}
+img.resize {
+    width:540px; /* you can use % */
+    height: auto;
+}
 </style>

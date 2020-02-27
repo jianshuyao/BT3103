@@ -161,4 +161,9 @@ export default {
 
 <style scoped>
 @import './css/styles.css'; 
+
+img {
+    width:540px; /* you can use % */
+    height: auto;
+}
 </style>
