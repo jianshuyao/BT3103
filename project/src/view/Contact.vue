@@ -82,7 +82,11 @@
   margin-bottom: 3rem;
   color: black;
 }
+.text-container{
+    text-align: center;
+}
 
+<<<<<<< HEAD
 .text-container{
     text-align: center;
 }
@@ -91,3 +95,6 @@ img.resize {
     height: auto;
 }
 </style>
+=======
+</style>
+>>>>>>> 7ea3df7fb266ea05bdd30e886f7c1e31e618c1b5
