@@ -4,6 +4,7 @@ import Contact from './view/Contact.vue'
 import University from './view/University.vue'
 
 
+
 export default[
     {
       path: '/',
@@ -15,7 +16,7 @@ export default[
     },
     {
       path: '/University',
-      component: University
+      component: University 
     },
     {
       path: '/About',
