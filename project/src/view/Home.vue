@@ -5,7 +5,7 @@
       <div class="home_container">
         <div class="title">
           <i class="fa fa-globe"></i>
-          Discovering the Globe  
+          Discovering the Globe
         </div>
         <div class="about">
           Explore new vistas on the Student Exchange Programme
@@ -14,7 +14,7 @@
           <router-link to='/University'>
             <button class="btn btn-success btn-middle">
               <i class="fa fa-paper-plane"></i>
-              Search Program
+              Search Programme
             </button>
           </router-link>
         </div>
@@ -45,7 +45,7 @@
             <router-link to='/University'>
               <button class="btn btn-danger btn-middle">
                 <i class="fa fa-paper-plane"></i>
-                Search Program
+                Search Programme
               </button>
             </router-link>
          </div>
