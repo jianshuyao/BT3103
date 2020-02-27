@@ -97,13 +97,13 @@ export default {
 .parallax1 .home_container {
   text-align: center;
   color: white;
-  font-weight: lighter;
+  font-weight: 500;
 }
 
 .parallax2 .home_container {
   text-align: center;
   color: black;
-  font-weight: lighter;
+  font-weight: 500;
 }
 
 .parallax1 .title {
