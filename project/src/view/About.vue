@@ -73,11 +73,11 @@
 
             <!-- Accordion -->
             <div class="accordion-container" id="accordionOne">
-                <h2>What we do</h2>
+                <h2>What we offer</h2>
                 <div class="item">
                     <div id="headingOne">
                         <span data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" role="button">
-                            <span class="circle-numbering">1</span><span class="accordion-title">How Can Aria Help Your Business</span>
+                            <span class="circle-numbering">1</span><span class="accordion-title">Powerful Search Function</span>
                         </span>
                     </div>
                 </div> <!-- end of item -->
@@ -85,7 +85,7 @@
                 <div class="item">
                     <div id="headingTwo">
                         <span class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" role="button">
-                            <span class="circle-numbering">2</span><span class="accordion-title">Great Strategic Business Planning</span>
+                            <span class="circle-numbering">2</span><span class="accordion-title">Consolidated Program Information</span>
                         </span>
                     </div>
                     
@@ -94,7 +94,7 @@
                 <div class="item">
                     <div id="headingThree">
                         <span class="collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" role="button">
-                            <span class="circle-numbering">3</span><span class="accordion-title">Online Marketing Campaigns</span>
+                            <span class="circle-numbering">3</span><span class="accordion-title">Efficient Information Gathering</span>
                         </span>
                     </div>
                 </div> <!-- end of item -->
@@ -117,7 +117,7 @@
                     <div id="headingOne">
                         <span data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" role="button">
                             <span class="circle-numbering">1</span>
-                            <span class="accordion-title">How Can Aria Help Your Business</span>
+                            <span class="accordion-title">One-off platform for exchange planning</span>
                         </span>
                     </div>
                 </div> <!-- end of item -->
@@ -125,7 +125,7 @@
                 <div class="item">
                     <div id="headingTwo">
                         <span class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" role="button">
-                            <span class="circle-numbering">2</span><span class="accordion-title">Great Strategic Business Planning</span>
+                            <span class="circle-numbering">2</span><span class="accordion-title">Hassle-free platform for all faculties</span>
                         </span>
                     </div>
                     
@@ -134,7 +134,7 @@
                 <div class="item">
                     <div id="headingThree">
                         <span class="collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" role="button">
-                            <span class="circle-numbering">3</span><span class="accordion-title">Online Marketing Campaigns</span>
+                            <span class="circle-numbering">3</span><span class="accordion-title">Strategic searching based on needs</span>
                         </span>
                     </div>
                 </div> <!-- end of item -->
