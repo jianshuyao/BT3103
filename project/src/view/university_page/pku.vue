@@ -7,26 +7,37 @@
             <div id="w-node-76c147234d34-3e215c33">
               <div class="home-section-wrap">
                 
-                <h1 class="section-heading">The University of California, Santa Barbara</h1>
+                <h1 class="section-heading">Peking University</h1>
                 <br>
-                <p class="paragraph-light">The University of California, Santa Barbara (UC Santa Barbara or UCSB) is a public research university in Santa Barbara, California. It is one of the 10 campuses of the University of California system. Tracing its roots back to 1891 as an independent teachers&#x27; college, UCSB joined the University of California system in 1944 and is the third-oldest general-education campus in the system.</p>
+                <p class="paragraph-light">Peking University (PKU), is a major Chinese research university located in
+Beijing and a member of the C9 League. It is the first modern national
+university established in China, founded as the "Imperial University of
+Peking" in 1898 as a replacement of the ancient Taixue or Guozijian, or
+Imperial Academy. It also served as the highest administration for
+education in China at the beginning of its founding. By 1920, it had become
+a center for progressive thought.
+Peking University is consistently ranked as one of the top higher learning
+institution in mainland China. In addition to academics, Peking University is
+especially renowned for its campus grounds and the beauty of its traditional
+Chinese architecture.
+</p>
               </div>
               <br>
               <div class="info-table table3">
-              <a href="https://www.ucsb.edu/">
+              <a href="https://www.pku.edu.cn/">
                 <div>Learn More</div>
               </a>
               </div>
               <br>
               <div class="university-image">
-                <img src="./assets/ucsb.png" class="img-thumbnail" height="300" width="2000">
+                <img src="./assets/pku.jpg" class="img-thumbnail" height="300" width="2000">
               </div>
             <!-- </div><img src="./assets/ucsb.png" srcset="images/ucsb-campus-storke-bike-circle-ucen-ocean-p-500.jpeg 500w, images/ucsb-campus-storke-bike-circle-ucen-ocean.jpg 549w" sizes="(max-width: 479px) 94vw, (max-width: 577px) 95vw, 549px" id="w-node-76c147234d3f-3e215c33" alt=""></div> -->
           </div>
         </div>
       </div>
     </div>
-  
+
   
 
     <div class="ucsb-container">
@@ -37,25 +48,37 @@
         </div>
         <ul class="info-list">
           <li><strong>Academic Calendar</strong></li>
-            <p>The majority of UC campuses operate on the quarter system, while Berkeley
-and Merced operate on a semester system. </p>
+               <p>Semester 1: September to January</p>
+               <p>Semester 2: February to July</p>
+
           <br>
           <div class="border"></div>
           <li><strong>Colleges Accepting Students</strong></li>
-          <p><center> FASS, FoS, FoE, and SoC</center></p>
+          <p><center> BIZ, FASS, FoS, FoE, FoL, SoC, SDE, USP</center></p>
           <br>
           <div class="border"></div>
           <li><strong>Module Restriction</strong></li>
-          <p>Some majors have restricted enrolment or are not open to Reciprocal Exchange
-students. Before you choose your major, review the UC Undergraduate
-Majors table and the Undergraduate Impacted Majors table. This information will
-help you learn if your major is offered at a particular UC campus.</p>
+          <p>Most courses offered at Peking University are taught in Chinese. English
+courses are highlighted in the remarks column in the course information
+website. Modules may change, the school/department reserves the right to
+enrol a student to certain course. The course information of the next
+semester will be published at the course information website at the end of
+the previous semester. </p>
+           <br>
+           <p>Courses from the following faculties/programmes are not open to exchange
+students:</p>
+            <ul>
+                <li>Health Science Centre </li>
+                <li>Faculty with special pre-requisites</li>
+                <li>Tailor-made programmes</li>
+                <li>Shenzhen Graduate School</li>
+            </ul>
           <br>
           <div class="border"></div>
           <li><strong>MC Exchange Ratio</strong></li>
-          <p><center>15 Quarter units = 20 NUS MCs</center></p>
+          <p><center>15 Credits</center></p>
         </ul>
-       <!-- <a href="#">Learn More</a> -->
+        <!-- <a href="#">Learn More</a> -->
       </div>
 
       <div class="info-table table2">
@@ -66,34 +89,46 @@ help you learn if your major is offered at a particular UC campus.</p>
         <ul class="info-list">
           <li><strong>Health/Medical
 Insurance</strong></li>
-            <p>All registered NUS students are covered under the university health
-insurance and the blanket travel insurance. If the insurance coverage is not enough, students are advised to purchase
-additional health and/or travel insurance from their preferred agent.</p>
+            <p>All NUS matriculated students are covered under the NUS Travel Insurance
+Policy for personal accident and medical expenses incurred by NUS students
+on NUS approved overseas trips. If the coverage is not comprehensive,
+students are welcome to purchase their additional travel insurance. </p>
           <br>
+          <p>The Chinese Ministry of Education requires that all international students
+be medically insured throughout their study in China. This policy is crucial to
+the health, wellness and success of international students. Students who
+study at Peking University for more than one semester are required to
+purchase the University’s recommended medical insurance on the day of
+registration. Students who study at Peking University for one semester
+could choose to buy overseas medical insurance, which must cover China
+and with offices in mainland China, and submit relevant insurance proof
+(the insurance company’s contact in China included) on the day of
+registration. Please note that students without valid medical insurance are
+not allowed to register.</p>
+            <br>
           <div class="border"></div>
           <li><strong>Cost of Living</strong></li>
-            <p><center>Please refer to <a href= 'http://eap.ucop.edu/guides/reciprocity/Pages/default.aspx'>this page</a> (and click on ‘Money Matters’): </center></p>
+            <p><center>Please refer to <a href= 'http://www.isd.pku.edu.cn/index.php?m=content&c=index&a=show&catid=70&id=569'>this page</a></center></p>
             <br>
           <div class="border"></div>
           <li><strong>Weather</strong></li>
-          <p>In Santa Barbara, the summers are warm, arid, and clear and the winters are cold, wet, and partly cloudy. Over the course of the year, the temperature typically varies from 42°F to 77°F and is rarely below 35°F or above 84°F.
+          <p>July is the hottest month in Beijing with an average temperature of 27°C (81°F) and the coldest is January at -4°C (25°F) with the most daily sunshine hours at 12 in June. The wettest month is August with an average of 182mm of rain.
 
 </p>
         </ul>
-        <!-- <a href="#">Learn More</a> -->
+       <!-- <a href="#">Learn More</a> -->
       </div>
     </div>
 
     <div class="info-table table3">
         <router-link to="/University">Go Back to Programme list</router-link>
     </div>
-
   </body>
 </template>
 
 <script>
 export default{
-  name: 'ucsb', 
+  name: 'pku', 
 }
 </script>
 

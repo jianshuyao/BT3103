@@ -44,7 +44,7 @@ export default{
       ],
       universities: [
         { name: 'University of California, Santa Barbara', country: 'United States', length: 3, link:'University/UCSB'},
-        { name: 'Peking University', country: 'China', length: 6, link:'About'},
+        { name: 'Peking University', country: 'China', length: 6, link:'University/PKU'},
         { name: 'Tokyo University', country: 'Japan', length: 5, link:'/tku.vue'},
         { name: 'Fudan University', country: 'China', length: 6, link:'/fdu.vue'},
         { name: 'Oxford University', country: 'United Kingdom', length: 4, link:'oxf.vue'},
