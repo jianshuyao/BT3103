@@ -11,12 +11,16 @@
 
           <div class="col-md-4 col-sm-6 col-xs-12">
             <ul class="social-icons">
-              <li><a href="#"><i class="fa fa-github"></i></a></li>  
+              <li>
+                <a class="github" href="https://github.com/jianshuyao/BT3103">
+                  <i class="fa fa-github"></i>
+                </a>
+              </li>  
             </ul>
           </div>
         </div>
       </div>
-</footer>
+    </footer>
     
   </div>
 </template>
@@ -85,9 +89,10 @@ export default {
   font-weight:700;
   font-size:15px
 }
+
 .social-icons a{
-  background-color:#eceeef;
-  color:#818a91;
+  background-color:#29aafe;
+  color:#29aafe;
   font-size:25px;
   display:inline-block;
   line-height:44px;
@@ -103,7 +108,7 @@ export default {
 .social-icons a:active,.social-icons a:focus,.social-icons a:hover
 {
   color:#fff;
-  background-color:#7993a4;
+  background-color:#29aafe;
 }
 .social-icons.size-sm a
 {
@@ -112,6 +117,11 @@ export default {
   width:34px;
   font-size:14px
 }
+.social-icons a.github:hover
+{
+  background-color:#7993a4
+}
+
 @media (max-width:767px)
 {
   .social-icons li.title
