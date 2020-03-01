@@ -4,7 +4,7 @@
     <div class="parallax1">
       <div class="home_container">
         <div class="title">
-          <i class="fa fa-globe"></i>
+          <i class="fas fa-globe-americas"></i>
           Discovering the Globe
         </div>
         <div class="about">
@@ -13,7 +13,7 @@
         <div class="centered">
           <router-link to='/University'>
             <button class="btn btn-success btn-middle">
-              <i class="fa fa-paper-plane"></i>
+              <i class="fas fa-plane" style="margin:0 10px 0 0;"></i>
               Search Programme
             </button>
           </router-link>
@@ -35,8 +35,8 @@
       <div class="parallax2">
         <div class="home_container">
           <div class="title">
-            <i class="fa fa-globe"></i>
-            Discovering the Globe  
+            <i class="fas fa-globe-asia"></i>
+            Discovering the Globe
           </div>
           <div class="about">
             Explore new vistas on the Student Exchange Programme
@@ -44,7 +44,7 @@
           <div class="centered">
             <router-link to='/University'>
               <button class="btn btn-danger btn-middle">
-                <i class="fa fa-paper-plane"></i>
+                <i class="fas fa-train" style="margin:0 10px 0 0;"></i>
                 Search Programme
               </button>
             </router-link>

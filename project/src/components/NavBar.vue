@@ -8,25 +8,25 @@
         <ul class="nav navbar-nav">
           <li>
             <router-link class="nav-link" to="/Home" exact>
-              <i class="fa fa-home" aria-hidden="true" ></i>
+              <i class="fas fa-home" aria-hidden="true" ></i>
               Home
             </router-link>
           </li>
           <li>
             <router-link class="nav-link" to="/University" exact>
-              <i class="fa fa-university"></i>
+              <i class="fas fa-university"></i>
               Programs
             </router-link>
           </li>
           <li>
             <router-link class="nav-link" to="/About" exact>
-              <i class="fa fa-user-circle-o"></i>
+              <i class="fas fa-user"></i>
               About Us
             </router-link>
           </li>
           <li>
             <router-link class="nav-link" to="/Contact" exact>
-              <i class="fa fa-envelope"></i>
+              <i class="fas fa-envelope"></i>
               Contact Us
             </router-link>
           </li>

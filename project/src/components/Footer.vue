@@ -9,12 +9,12 @@
         <ul class="nav navbar-nav social-icons">
           <li>
                 <a class="github" href="https://github.com/jianshuyao/BT3103">
-                  <i class="fa fa-github"></i>
+                  <i class="fab fa-github"></i>
                 </a>
               </li> 
               <li>
                 <a href="https://github.com/jianshuyao/BT3103">
-                  <i class="fa fa-twitter"></i>
+                  <i class="fab fa-twitter"></i>
                 </a>
               </li>
         </ul>

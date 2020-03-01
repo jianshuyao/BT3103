@@ -12,11 +12,8 @@ import Routes from './router'
 import Vuetify from "vuetify";
 import "vuetify/dist/vuetify.min.css"; // Ensure you are using css-loader
 
-import BootstrapVueIcons from 'bootstrap-vue'
-
 
 Vue.use(BootstrapVue);
-Vue.use(BootstrapVueIcons);
 Vue.use(VueRouter)
 Vue.use(Vuetify)
 Vue.config.productionTip = false
