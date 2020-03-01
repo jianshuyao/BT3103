@@ -14,7 +14,7 @@
         <div> {{ university.name }} </div>
         <div class="box__subtitle"> {{ university.country }} </div>
         <div class="box__subtitle"> {{ university.length }} Months </div>
-        <b-link href = "'/'+ university.link">Go to University Page</b-link>
+        <router-link v-bind:to = "'/'+ university.link" exact>Go to University Page</router-link>
       </div>
     </el-col>
 
@@ -44,7 +44,7 @@ export default{
       ],
       universities: [
         { name: 'University of California, Santa Barbara', country: 'United States', length: 3, link:'UCSB.vue'},
-        { name: 'Peking University', country: 'China', length: 6, link:'/pku.vue'},
+        { name: 'Peking University', country: 'China', length: 6, link:'About'},
         { name: 'Tokyo University', country: 'Japan', length: 5, link:'/tku.vue'},
         { name: 'Fudan University', country: 'China', length: 6, link:'/fdu.vue'},
         { name: 'Oxford University', country: 'United Kingdom', length: 4, link:'oxf.vue'},
