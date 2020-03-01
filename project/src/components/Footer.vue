@@ -1,27 +1,25 @@
 <template>
   <div>
-      <!-- Site footer -->
-    <footer class="site-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-sm-6 col-xs-12">
-            <p class="copyright-text">Copyright &copy; BT3103 All Rights Reserved by Team Withdrawal
+    <nav class="navbar navbar-expand-sm navbar-light" style="background-color: #ededed;">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <p class="copyright-text">Copyright &copy; BT3103 All Rights Reserved by Team Withdrawal
             </p>
-          </div>
-
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <ul class="social-icons">
-              <li>
+        </div>
+        <ul class="nav navbar-nav social-icons">
+          <li>
                 <a class="github" href="https://github.com/jianshuyao/BT3103">
                   <i class="fa fa-github"></i>
                 </a>
-              </li>  
-            </ul>
-          </div>
-        </div>
+              </li> 
+              <li>
+                <a href="https://github.com/jianshuyao/BT3103">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+        </ul>
       </div>
-    </footer>
-    
+    </nav>
   </div>
 </template>
 
@@ -39,7 +37,13 @@ export default {
   padding:15px 10px;
   font-size:15px;
   line-height:24px;
+  height:auto;
   color:#737373;
+}
+.site-footer .container{
+  width: 100%;
+  height: 30px;
+  text-align: center;
 }
 .site-footer a
 {
@@ -57,7 +61,7 @@ export default {
 .site-footer .social-icons a
 {
   width:40px;
-  height:40px;
+  height:auto;
   line-height:40px;
   margin-left:6px;
   margin-right:0;
@@ -74,12 +78,15 @@ export default {
 {
   padding-left:0;
   margin-bottom:0;
-  list-style:none
+  list-style:none;
+}
+.social-icons ul{
+  text-align:right;
 }
 .social-icons li
 {
   display:inline-block;
-  margin-bottom:4px
+  margin-right: 10px;
 }
 .social-icons li.title
 {
@@ -91,13 +98,13 @@ export default {
 }
 
 .social-icons a{
-  background-color:#29aafe;
-  color:#29aafe;
+  background-color:#828282;
+  color:#fff;
   font-size:25px;
   display:inline-block;
   line-height:44px;
   width:44px;
-  height:44px;
+  height:auto;
   text-align:center;
   margin-right:8px;
   border-radius:100%;
@@ -113,7 +120,7 @@ export default {
 .social-icons.size-sm a
 {
   line-height:34px;
-  height:34px;
+  height:auto;
   width:34px;
   font-size:14px
 }
