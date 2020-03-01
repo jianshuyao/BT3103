@@ -34,7 +34,7 @@
                         <div class="help-block with-errors"></div>
                     </div>
                     <div class="form-group checkbox">
-                        <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>I agree with Aria's stated <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms Conditions</a> 
+                        <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>I agree with the stated <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms Conditions</a> 
                         <div class="help-block with-errors"></div>
                     </div>
                     <div class="form-group">
@@ -81,6 +81,10 @@
 .form-2 .text-container {
   margin-bottom: 3rem;
   color: black;
+}
+
+.text-container{
+    text-align: center;
 }
 
 </style>
