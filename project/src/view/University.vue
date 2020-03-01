@@ -1,6 +1,6 @@
 <template>
 <div v-cloak>
-  
+  <router-view></router-view>
  <div class="container">
   <div class="col-15">
     <div class="md-form">
@@ -43,7 +43,7 @@ export default{
         { label: 'By Program Length', value: 'length' },
       ],
       universities: [
-        { name: 'University of California, Santa Barbara', country: 'United States', length: 3, link:'UCSB.vue'},
+        { name: 'University of California, Santa Barbara', country: 'United States', length: 3, link:'University/UCSB'},
         { name: 'Peking University', country: 'China', length: 6, link:'About'},
         { name: 'Tokyo University', country: 'Japan', length: 5, link:'/tku.vue'},
         { name: 'Fudan University', country: 'China', length: 6, link:'/fdu.vue'},

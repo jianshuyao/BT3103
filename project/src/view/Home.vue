@@ -3,7 +3,7 @@
   <div>
     <div class="parallax1">
       <div class="home_container">
-        <div class="title">
+        <div class="home-title">
           <i class="fas fa-globe-americas"></i>
           Discovering the Globe
         </div>
@@ -34,7 +34,7 @@
 
       <div class="parallax2">
         <div class="home_container">
-          <div class="title">
+          <div class="home-title">
             <i class="fas fa-globe-asia"></i>
             Discovering the Globe
           </div>
@@ -106,7 +106,7 @@ export default {
   font-weight: 500;
 }
 
-.parallax1 .title {
+.parallax1 .home-title {
   margin: auto;
   position: absolute;
   font-size: 250%;
@@ -115,7 +115,7 @@ export default {
   transform: translate(-50%, -50%);
 }
 
-.parallax2 .title {
+.parallax2 .home-title {
   margin: auto;
   position: absolute;
   font-size: 250%;
