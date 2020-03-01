@@ -3,7 +3,10 @@
     <nav class="navbar navbar-expand-sm navbar-light" style="background-color: #ededed;">
       <div class="container-fluid">
         <div class="navbar-header">
-          <img src="../assets/nus.png" width="100" height="45" style="margin:0px 30px 0px 0px">
+          <div class="navbar-brand">
+            <img src="../assets/nus.png" width="100" height="45" style="margin:0px 30px 0px 0px">
+            <span>SEP Searcher</span>
+          </div>
         </div>
         <ul class="nav navbar-nav">
           <li>
@@ -45,7 +48,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-.nav{
-  postion: fixed;
+.navbar.navbar-light .navbar-brand span{
+  color:#696969;
+  font-weight:600;
+  font-size: 130%;
+  letter-spacing: 2px;
+  font-family:"Arial";
 }
 </style>
