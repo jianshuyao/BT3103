@@ -13,7 +13,7 @@
                 </a>
               </li> 
               <li>
-                <a href="https://github.com/jianshuyao/BT3103">
+                <a class="twitter" href="https://github.com/jianshuyao/BT3103">
                   <i class="fab fa-twitter"></i>
                 </a>
               </li>
@@ -126,7 +126,11 @@ export default {
 }
 .social-icons a.github:hover
 {
-  background-color:#7993a4
+  background-color:#000
+}
+.social-icons a.twitter:hover
+{
+  background-color:#29aafe
 }
 
 @media (max-width:767px)
