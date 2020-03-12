@@ -4,7 +4,7 @@
       <div class="container-fluid">
         <div class="navbar-header">
           <div class="navbar-brand">
-            <img src="../assets/nus.png" width="100" height="45" style="margin:0px 30px 0px 0px">
+            <img src="../assets/nus.png" width="100" height="45">
             <span>SEP Searcher</span>
           </div>
         </div>
@@ -52,7 +52,8 @@ export default {
   color:#696969;
   font-weight:600;
   font-size: 130%;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-family:"Arial";
+  margin-left: 30px;
 }
 </style>
