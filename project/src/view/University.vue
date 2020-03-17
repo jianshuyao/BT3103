@@ -1,7 +1,7 @@
 <template>
  <div v-cloak>
   <router-view></router-view>
-  <div class="container">
+  <div class="uni_container">
     
     <button v-on:click="hideFilter = !hideFilter"> 
       <i class="fas fa-filter">Apply Filters</i> 
@@ -175,7 +175,7 @@ body {
   height: 150px;
 }
 
-.container {
+.uni_container {
   max-width: 980px;
   margin: 20px auto;
   @media screen and (max-width: 1050px) { 

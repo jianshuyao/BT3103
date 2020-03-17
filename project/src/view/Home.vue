@@ -97,13 +97,11 @@ export default {
 .parallax1 .home_container {
   text-align: center;
   color: white;
-  font-weight: 500;
 }
 
 .parallax2 .home_container {
   text-align: center;
   color: black;
-  font-weight: 500;
 }
 
 .parallax1 .home-title {
@@ -128,7 +126,7 @@ export default {
   margin: auto;
   text-align: center;
   position: absolute;
-  font-size: 140%;
+  font-size: 150%;
   top: 24%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -138,7 +136,7 @@ export default {
   margin: auto;
   text-align: center;
   position: absolute;
-  font-size: 140%;
+  font-size: 150%;
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);

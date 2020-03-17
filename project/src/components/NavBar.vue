@@ -8,7 +8,7 @@
             <span>SEP Searcher</span>
           </div>
         </div>
-        <ul class="nav navbar-nav">
+        <ul class="nav navbar-nav" style="font-size:16px">
           <li>
             <router-link class="nav-link" to="/Home" exact>
               <i class="fas fa-home" aria-hidden="true" ></i>
