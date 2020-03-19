@@ -3,14 +3,24 @@
   <router-view></router-view>
   <div class="uni_container">
     
-    <button v-on:click="hideFilter = !hideFilter"> 
+    <!-- search box -->
+    <div class="col-15">
+      <div class="md-form">
+          <input type="text" class="form-control" placeholder="Search Opportunities" v-model="searchbox">
+        </div>
+    </div>
+
+
+    <!-- filters -->
+    <button class="filterButton" v-on:click="hideFilter = !hideFilter"> 
       <i class="fas fa-filter">Apply Filters</i> 
     </button>
     <div v-if="!hideFilter">
+      
+      <!-- location filter -->
       <button v-on:click="hideLocationFilter = !hideLocationFilter"><i class="fas fa-map">Location Filter</i></button>
+      <br>
       <div v-if="!hideLocationFilter">
-        <!-- <input type="text" placeholder="Filter Location" v-model="filterLocation"> -->
-
         <multiselect v-model="filterLocation" 
                      :options="country_list" 
                      :multiple="true" 
@@ -19,34 +29,29 @@
                      :group-select="true" 
                      placeholder="Type to search">
                      <span slot="noResult">Oops! No elements found. Consider changing the search query.</span></multiselect>
+      <br>
 
-        <h1>{{filterLocation}}</h1>
-
+      <!-- length filter -->
       </div>
       <button v-on:click="hideLengthFilter = !hideLengthFilter"><i class="fas fa-calendar-alt">Program Length Filter</i></button>
       <div v-if="!hideLengthFilter">
-        <v-range-slider style="margin: 35px 20px 0px 20px"
-                        :max="12"
-                        :min="0"
-                        :step="1"
-                        thumb-label="always"
-                        hint="Month(s)"
-                        persistent-hint>
-        </v-range-slider>
+        <ejs-slider id="range"
+                    ref="rangeSlider"
+                    v-model="filterLength"
+                    :type="rangetype"
+                    :enabled="enabled"
+                    :min="min"
+                    :max="max"
+                    :step="step"
+                    :ticks="rangeticks"></ejs-slider>
+        <p>Filtered Program Length: {{filterLength[0]}} ~ {{filterLength[1]}} Months</p>
+      <br>
+
       </div>
       
     </div>
-   
-   
-    
-    <div class="col-15">
-      <div class="md-form">
-          <input type="text" class="form-control" placeholder="Search Opportunities" v-model="searchbox">
-        </div>
-    </div>
-    
 
-   
+
     <br>
     <ul>
         <li v-for="university in getUniversities" v-bind:key="university.id">
@@ -72,8 +77,12 @@
 
 
 <script>
+import Vue from "vue";
 import database from '../firebase.js';
 import Multiselect from 'vue-multiselect';
+import { SliderPlugin } from "@syncfusion/ej2-vue-inputs";
+Vue.use(SliderPlugin);
+
 
 export default {
   components: {
@@ -85,8 +94,10 @@ export default {
         hideFilter: true,
         hideLocationFilter: true,
         hideLengthFilter: true,
+        // filters settings
         uniList: [],
         searchbox: '',
+        // location filter settings
         filterLocation: [],
         country_list: [
           {
@@ -97,7 +108,25 @@ export default {
             continent: 'Asia Pacific',
             countries: ['China', 'Japan']
           },
-        ]
+          {
+            continent: 'Europe',
+            countries: ['United Kingdom', 'Switzerland', 'Germany', 'France']
+          }
+        ],
+        // length filter settings
+        min: 0,
+        max: 12,
+        step: 1,
+        filterLength: [0,12],
+        rangetype: "Range",
+
+        rangeticks: {
+          placement: "After",
+          largeStep: 3,
+          smallStep: 1,
+          showSmallTicks: true,
+          
+      },
         
         }
   },
@@ -126,27 +155,27 @@ export default {
 
   computed: {
 
-    // getUniversities() {
-    //   var universities = this.uniList.filter((university) => {
-    //       return university.university.toLowerCase().includes(this.searchbox.toLowerCase());
-    //     });
+    // sortedArray: function() {
+    //   function compare(a, b) {
+    //     if (a.continent < b.continent)
+    //       return -1;
+    //     if (a.continent > b.continent)
+    //       return 1;
+    //     return 0;
+    //   }
+    //   return this.country_list.sort(compare);
+    // },
 
-    //   if (this.filterLocation != "") {
-    //     var uniLoc = universities.filter((university) => {
-    //       return university.location.toLowerCase().includes(this.filterLocation.toLowerCase());
-    //     });
-    //     return uniLoc;
-
-    //   } else {
-    //     return universities;
-    //   }     
-    // }
+    // sortedArray(){
+    //   return this.country_list.sort((a, b) => a.continent - b.continent );
+    // },
 
     getUniversities() {
       var universities = this.uniList.filter((university) => {
           return university.university.toLowerCase().includes(this.searchbox.toLowerCase());
         });
-
+    
+      // location filter
       if (this.filterLocation != "") {
         var query1 = universities.filter((university) => {
           return university.location.toLowerCase().includes(this.filterLocation[0].toLowerCase());
@@ -154,17 +183,31 @@ export default {
 
         if (this.filterLocation.length >= 1) {
           for (let i = 1; i < this.filterLocation.length; i++) {
-            query1 = query1.filter((university) => {
+            query1 = query1.concat(universities.filter((university) => {
               return university.location.toLowerCase().includes(this.filterLocation[i].toLowerCase());
-            });
+            }));
           }
         }
+
+        // program length filter - when location fliter is not empty
+        if (this.filterLength !="") {
+          var query2 = query1.filter((university) => {
+            return university.semesterLength >= this.filterLength[0] && university.semesterLength <= this.filterLength[1];
+          });
+          return query2
+        }
+
         return  query1;
       }
-        
-
-       return universities;
+      // program length filter - when location filter is empty
+      if (this.filterLength !="") {
+        var query3 = universities.filter((university) => {
+          return university.semesterLength >= this.filterLength[0] && university.semesterLength <= this.filterLength[1];
+        });
+        return query3
       }
+      return universities;
+    }
     
     }
 }
@@ -175,8 +218,12 @@ export default {
 <style>
 @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
 @import url("https://unpkg.com/vue-multiselect@2.1.0/dist/vue-multiselect.min.css");
-/* <script src="https://unpkg.com/vue-multiselect@2.1.0"></script>
-<link rel="stylesheet" href="https://unpkg.com/vue-multiselect@2.1.0/dist/vue-multiselect.min.css"> */
+
+@import url("https://cdn.syncfusion.com/ej2/ej2-grids/styles/material.css");
+@import url("https://cdn.syncfusion.com/ej2/ej2-base/styles/material.css");
+@import url("https://cdn.syncfusion.com/ej2/ej2-buttons/styles/material.css");
+@import url("https://cdn.syncfusion.com/ej2/ej2-popups/styles/material.css");
+@import url("https://cdn.syncfusion.com/ej2/ej2-vue-inputs/styles/material.css");
 
 $material-shadow: 0 1px 3px 0 rgba(0,0,0,0.15);
 
@@ -223,6 +270,17 @@ body {
   @media screen and (max-width: 1050px) { 
     width: 95%; 
   }
+}
+
+.filterButton {
+  background-color: #4CAF50;
+  border: 3px;
+  padding: 13px 23px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  
+  font-size: 17px;
 }
 
 </style>
