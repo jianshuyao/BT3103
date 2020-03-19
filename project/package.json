@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.12.1",
+    "@syncfusion/ej2-vue-inputs": "^17.4.55",
     "core-js": "^3.6.4",
     "vue": "^2.6.11",
     "vuetify": "^2.2.15"
