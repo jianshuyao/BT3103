@@ -9,7 +9,19 @@
     <div v-if="!hideFilter">
       <button v-on:click="hideLocationFilter = !hideLocationFilter"><i class="fas fa-map">Location Filter</i></button>
       <div v-if="!hideLocationFilter">
-        <input type="text" placeholder="Filter Location" v-model="filterLocation">
+        <!-- <input type="text" placeholder="Filter Location" v-model="filterLocation"> -->
+
+        <multiselect v-model="filterLocation" 
+                     :options="country_list" 
+                     :multiple="true" 
+                     group-values="countries" 
+                     group-label="continent" 
+                     :group-select="true" 
+                     placeholder="Type to search">
+                     <span slot="noResult">Oops! No elements found. Consider changing the search query.</span></multiselect>
+
+        <h1>{{filterLocation}}</h1>
+
       </div>
       <button v-on:click="hideLengthFilter = !hideLengthFilter"><i class="fas fa-calendar-alt">Program Length Filter</i></button>
       <div v-if="!hideLengthFilter">
@@ -61,7 +73,13 @@
 
 <script>
 import database from '../firebase.js';
+import Multiselect from 'vue-multiselect';
+
 export default {
+  components: {
+    Multiselect
+  },
+
   data(){
     return{
         hideFilter: true,
@@ -69,7 +87,18 @@ export default {
         hideLengthFilter: true,
         uniList: [],
         searchbox: '',
-        filterLocation: '',
+        filterLocation: [],
+        country_list: [
+          {
+            continent: 'North America',
+            countries: ['United States', 'Canada']
+          },
+          {
+            continent: 'Asia Pacific',
+            countries: ['China', 'Japan']
+          },
+        ]
+        
         }
   },
 
@@ -88,6 +117,7 @@ export default {
         })
       })
     }, 
+
   },
   //Lifecycle hook
   created(){
@@ -95,6 +125,7 @@ export default {
   },
 
   computed: {
+
     // getUniversities() {
     //   var universities = this.uniList.filter((university) => {
     //       return university.university.toLowerCase().includes(this.searchbox.toLowerCase());
@@ -117,17 +148,25 @@ export default {
         });
 
       if (this.filterLocation != "") {
-        var uniLoc = universities.filter((university) => {
-          return university.location.toLowerCase().includes(this.filterLocation.toLowerCase());
+        var query1 = universities.filter((university) => {
+          return university.location.toLowerCase().includes(this.filterLocation[0].toLowerCase());
         });
-        return uniLoc;
 
-      } else {
-        return universities;
-      }     
-    }
+        if (this.filterLocation.length >= 1) {
+          for (let i = 1; i < this.filterLocation.length; i++) {
+            query1 = query1.filter((university) => {
+              return university.location.toLowerCase().includes(this.filterLocation[i].toLowerCase());
+            });
+          }
+        }
+        return  query1;
+      }
+        
+
+       return universities;
+      }
     
- },
+    }
 }
 
 
@@ -135,6 +174,9 @@ export default {
 
 <style>
 @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
+@import url("https://unpkg.com/vue-multiselect@2.1.0/dist/vue-multiselect.min.css");
+/* <script src="https://unpkg.com/vue-multiselect@2.1.0"></script>
+<link rel="stylesheet" href="https://unpkg.com/vue-multiselect@2.1.0/dist/vue-multiselect.min.css"> */
 
 $material-shadow: 0 1px 3px 0 rgba(0,0,0,0.15);
 

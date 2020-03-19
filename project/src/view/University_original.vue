@@ -22,7 +22,7 @@
       <div class="box box__empty"> No Match Found</div>
     </el-col>
 
-<v-btn slot="activator" icon> <v-icon>filter_list</v-icon> </v-btn>
+
     
  </div> <!-- container -->
   
