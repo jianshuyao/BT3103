@@ -18,35 +18,41 @@
     <div v-if="!hideFilter">
       
       <!-- location filter -->
-      <button v-on:click="hideLocationFilter = !hideLocationFilter"><i class="fas fa-map">Location Filter</i></button>
-      <br>
-      <div v-if="!hideLocationFilter">
-        <multiselect v-model="filterLocation" 
-                     :options="country_list" 
-                     :multiple="true" 
-                     group-values="countries" 
-                     group-label="continent" 
-                     :group-select="true" 
-                     placeholder="Type to search">
-                     <span slot="noResult">Oops! No elements found. Consider changing the search query.</span></multiselect>
-      <br>
+      <div class='locFilter'>
+        <button v-on:click="hideLocationFilter = !hideLocationFilter"><i class="fas fa-map">Location Filter</i></button>
+        
+
+        <br>
+        <div v-if="!hideLocationFilter">
+          <multiselect v-model="filterLocation" 
+                      :options="country_list" 
+                      :multiple="true" 
+                      group-values="countries" 
+                      group-label="continent" 
+                      :group-select="true" 
+                      placeholder="Type to search">
+                      <span slot="noResult">Oops! No elements found. Consider changing the search query.</span></multiselect>
+        <br>
+        </div>
+      </div>
 
       <!-- length filter -->
-      </div>
-      <button v-on:click="hideLengthFilter = !hideLengthFilter"><i class="fas fa-calendar-alt">Program Length Filter</i></button>
-      <div v-if="!hideLengthFilter">
-        <ejs-slider id="range"
-                    ref="rangeSlider"
-                    v-model="filterLength"
-                    :type="rangetype"
-                    :enabled="enabled"
-                    :min="min"
-                    :max="max"
-                    :step="step"
-                    :ticks="rangeticks"></ejs-slider>
-        <p>Filtered Program Length: {{filterLength[0]}} ~ {{filterLength[1]}} Months</p>
-      <br>
+      <div class='lenthFilter'>
+        <button v-on:click="hideLengthFilter = !hideLengthFilter"><i class="fas fa-calendar-alt">Program Length Filter</i></button>
+        <div v-if="!hideLengthFilter">
+          <ejs-slider id="range"
+                      ref="rangeSlider"
+                      v-model="filterLength"
+                      :type="rangetype"
+                      :enabled="enabled"
+                      :min="min"
+                      :max="max"
+                      :step="step"
+                      :ticks="rangeticks"></ejs-slider>
+          <p>Filtered Program Length: {{filterLength[0]}} ~ {{filterLength[1]}} Months</p>
+        <br>
 
+        </div>
       </div>
       
     </div>
@@ -54,19 +60,33 @@
 
     <br>
     <ul>
-        <li v-for="university in getUniversities" v-bind:key="university.id">
+      <div>
+
+        <li @click="goToUniLink(university)" 
+            v-for="university in getUniversities" v-bind:key="university.id"
+            >
+
+        <!-- https://stackoverflow.com/questions/54863355/vuejs-apply-loop-in-css-to-put-hover -->
+        <div @mouseover="university.hover=true"
+             @mouseleave="university.hover=false"
+             :style="{background: university.hover? university.background_hover : university.background}">
+          
           <div class="box"> 
             <img class = "introPic" :src="university.introPic" alt="Program Picture">
             <div> {{ university.university }} </div>
             <div class="box__subtitle"> {{ university.location }} </div>
             <div class="box__subtitle"> {{ university.semesterLength}} Months </div>
-            <router-link v-bind:to = "'/'+ university.link" exact>Go to University Page</router-link>
+            {{university.background_hover}}
+            <!-- <router-link v-bind:to = "'/'+ university.link" exact >Go to University Page</router-link> -->
           </div>
+        </div>
         </li>
 
         <div v-if="getUniversities.length === 0" >
             <div class="box box__empty"> No Match Found</div>
         </div>
+
+      </div>
 
     </ul>
     
@@ -85,6 +105,8 @@ Vue.use(SliderPlugin);
 
 
 export default {
+ 
+
   components: {
     Multiselect
   },
@@ -94,6 +116,7 @@ export default {
         hideFilter: true,
         hideLocationFilter: true,
         hideLengthFilter: true,
+      
         // filters settings
         uniList: [],
         searchbox: '',
@@ -147,6 +170,11 @@ export default {
       })
     }, 
 
+    // make the whole box clickable
+    goToUniLink(university) {
+      this.$router.push(`/${university.link}`);
+    }
+ 
   },
   //Lifecycle hook
   created(){
@@ -272,6 +300,10 @@ body {
   }
 }
 
+/* .active {
+  background: green;
+} */
+
 .filterButton {
   background-color: #4CAF50;
   border: 3px;
@@ -282,5 +314,28 @@ body {
   
   font-size: 17px;
 }
+
+.locFilter {
+  overflow-x: visible !important;
+  overflow-y: visible !important;
+  z-index: 1;
+  display: block;
+  position:relative;
+  
+}
+
+.lengthFilter {
+  z-index: -2;
+  overflow: hidden;
+  position:relative;
+
+}
+
+#range {
+  z-index: -10;
+ 
+  position:relative;
+}
+
 
 </style>
