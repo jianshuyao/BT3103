@@ -1,24 +1,28 @@
 <template>
 
   <body>
+    <!-- debug purposes  -->
+    <!-- <div>
+       <p v-for="uni in uni_data" v-bind:key="uni.id"> check firebase {{uni.university}}</p>
+      
+      <h1>{{uni_data}}</h1>
 
-    <div>
-      <p>check firebase {{uni_data.university}}</p>
+    </div> -->
 
-    </div>
+    <div v-for="uni in uni_data" v-bind:key="uni.id"> 
       <div class="ucsb-container">
         <div class="home-content-wrap">
           <div class="w-layout-grid about-grid">
             <div id="w-node-76c147234d34-3e215c33">
               <div class="home-section-wrap">
                 
-                <h1 class="section-heading">{{uni_data.university}}</h1>
+                <h1 class="section-heading">{{uni.university}}</h1>
                 <br>
-                <p class="paragraph-light">{{uni_data.intro}}</p>
+                <p class="paragraph-light">{{uni.intro}}</p>
               </div>
               <br>
               <div class="info-table table3">
-              <a v-bind:href="uni_data.website">
+              <a v-bind:href="uni.website">
                 <div>Learn More</div>
               </a>
               </div>
@@ -35,6 +39,7 @@
   
 
     <div class="ucsb-container">
+
       <div class="info-table table1">
         <div class="info-header">
           <div class="price"><span>Academics</span></div>
@@ -42,19 +47,19 @@
         </div>
         <ul class="info-list">
           <li><strong>Academic Calendar</strong></li>
-            <p>{{uni_data.academic_calendar}}</p>
+            <p>{{uni.academic_calendar}}</p>
           <br>
           <div class="border"></div>
           <li><strong>Colleges Accepting Students</strong></li>
-          <p><center>{{uni_data.colleges}}</center></p>
+          <p><center>{{uni.colleges}}</center></p>
           <br>
           <div class="border"></div>
           <li><strong>Module Restriction</strong></li>
-          <p>{{uni_data.module_restriction}}</p>
+          <p>{{uni.module_restriction}}</p>
           <br>
           <div class="border"></div>
           <li><strong>MC Exchange Ratio</strong></li>
-          <p><center>{{uni_data.mc_ratio}}</center></p>
+          <p><center>{{uni.mc_ratio}}</center></p>
         </ul>
        <!-- <a href="#">Learn More</a> -->
       </div>
@@ -65,9 +70,8 @@
           
         </div>
         <ul class="info-list">
-          <li><strong>Health/Medical
-Insurance</strong></li>
-            <p>{{uni_data.insurance}}</p>
+          <li><strong>Health/Medical Insurance</strong></li>
+            <p>{{uni.insurance}}</p>
           <br>
           <div class="border"></div>
           <li><strong>Cost of Living</strong></li>
@@ -75,7 +79,7 @@ Insurance</strong></li>
             <br>
           <div class="border"></div>
           <li><strong>Weather</strong></li>
-          <p>{{uni_data.weather}}
+          <p>{{uni.weather}}
 
 </p>
         </ul>
@@ -86,7 +90,7 @@ Insurance</strong></li>
     <div class="info-table table3">
         <router-link to="/University">Go Back to Programme list</router-link>
     </div>
-
+</div>
   </body>
 </template>
 
@@ -108,20 +112,14 @@ export default {
         querySnapShot.forEach(doc=>{
           uni=doc.data()
           uni.show=false
+          uni.id=doc.id
 
-          if (uni.university == "University of California, Berkely") {
+          if (uni.university == "University of California, Santa Barbara") {
             this.uni_data.push(uni)
-          }
-
-
-         
+          }   
         })
       })
-      // for (uni in programsList){
-      //   if (uni.university=='University of California, Berkely'){
-      //     uni_data=uni.data()
-      //   }
-      // }
+      
 
     }
 
