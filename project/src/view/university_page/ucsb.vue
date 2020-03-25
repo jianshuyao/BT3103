@@ -1,6 +1,11 @@
 <template>
 
   <body>
+
+    <div>
+      <p>check firebase {{uni_data.university}}</p>
+
+    </div>
       <div class="ucsb-container">
         <div class="home-content-wrap">
           <div class="w-layout-grid about-grid">
@@ -99,18 +104,24 @@ export default {
     fetchItems:function(){
       database.collection('programs').get().then((querySnapShot)=>{
         let uni={}
-        let programsList =[]
+       
         querySnapShot.forEach(doc=>{
           uni=doc.data()
           uni.show=false
-          programsList.push(uni)
+
+          if (uni.university == "University of California, Berkely") {
+            this.uni_data.push(uni)
+          }
+
+
+         
         })
       })
-      for (uni in programsList){
-        if (uni.university=='University of California, Berkely'){
-          uni_data=uni.data()
-        }
-      }
+      // for (uni in programsList){
+      //   if (uni.university=='University of California, Berkely'){
+      //     uni_data=uni.data()
+      //   }
+      // }
 
     }
 
