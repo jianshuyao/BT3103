@@ -7,13 +7,13 @@
             <div id="w-node-76c147234d34-3e215c33">
               <div class="home-section-wrap">
                 
-                <h1 class="section-heading">The University of California, Santa Barbara</h1>
+                <h1 class="section-heading">{{uni_data.university}}</h1>
                 <br>
-                <p class="paragraph-light">The University of California, Santa Barbara (UC Santa Barbara or UCSB) is a public research university in Santa Barbara, California. It is one of the 10 campuses of the University of California system. Tracing its roots back to 1891 as an independent teachers&#x27; college, UCSB joined the University of California system in 1944 and is the third-oldest general-education campus in the system.</p>
+                <p class="paragraph-light">{{uni_data.intro}}</p>
               </div>
               <br>
               <div class="info-table table3">
-              <a href="https://www.ucsb.edu/">
+              <a v-bind:href="uni_data.website">
                 <div>Learn More</div>
               </a>
               </div>
@@ -37,23 +37,19 @@
         </div>
         <ul class="info-list">
           <li><strong>Academic Calendar</strong></li>
-            <p>The majority of UC campuses operate on the quarter system, while Berkeley
-and Merced operate on a semester system. </p>
+            <p>{{uni_data.academic_calendar}}</p>
           <br>
           <div class="border"></div>
           <li><strong>Colleges Accepting Students</strong></li>
-          <p><center> FASS, FoS, FoE, and SoC</center></p>
+          <p><center>{{uni_data.colleges}}</center></p>
           <br>
           <div class="border"></div>
           <li><strong>Module Restriction</strong></li>
-          <p>Some majors have restricted enrolment or are not open to Reciprocal Exchange
-students. Before you choose your major, review the UC Undergraduate
-Majors table and the Undergraduate Impacted Majors table. This information will
-help you learn if your major is offered at a particular UC campus.</p>
+          <p>{{uni_data.module_restriction}}</p>
           <br>
           <div class="border"></div>
           <li><strong>MC Exchange Ratio</strong></li>
-          <p><center>15 Quarter units = 20 NUS MCs</center></p>
+          <p><center>{{uni_data.mc_ratio}}</center></p>
         </ul>
        <!-- <a href="#">Learn More</a> -->
       </div>
@@ -66,9 +62,7 @@ help you learn if your major is offered at a particular UC campus.</p>
         <ul class="info-list">
           <li><strong>Health/Medical
 Insurance</strong></li>
-            <p>All registered NUS students are covered under the university health
-insurance and the blanket travel insurance. If the insurance coverage is not enough, students are advised to purchase
-additional health and/or travel insurance from their preferred agent.</p>
+            <p>{{uni_data.insurance}}</p>
           <br>
           <div class="border"></div>
           <li><strong>Cost of Living</strong></li>
@@ -76,7 +70,7 @@ additional health and/or travel insurance from their preferred agent.</p>
             <br>
           <div class="border"></div>
           <li><strong>Weather</strong></li>
-          <p>In Santa Barbara, the summers are warm, arid, and clear and the winters are cold, wet, and partly cloudy. Over the course of the year, the temperature typically varies from 42°F to 77°F and is rarely below 35°F or above 84°F.
+          <p>{{uni_data.weather}}
 
 </p>
         </ul>
@@ -92,10 +86,41 @@ additional health and/or travel insurance from their preferred agent.</p>
 </template>
 
 <script>
-export default{
-  name: 'ucsb', 
+import database from '../../firebase.js';
+
+export default {
+  data(){
+    return{
+      uni_data: []
+}
+},
+
+  methods:{
+    fetchItems:function(){
+      database.collection('programs').get().then((querySnapShot)=>{
+        let uni={}
+        let programsList =[]
+        querySnapShot.forEach(doc=>{
+          uni=doc.data()
+          uni.show=false
+          programsList.push(uni)
+        })
+      })
+      for (uni in programsList){
+        if (uni.university=='University of California, Berkely'){
+          uni_data=uni.data()
+        }
+      }
+
+    }
+
+  },
+  created(){
+    this.fetchItems()
+  }
 }
 </script>
+
 
 <style>
   *{
