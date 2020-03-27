@@ -71,7 +71,7 @@ export default {
   height: 600px;
 
   /* Create background image */
-  background-image: url("../assets/home_image.jpeg");
+  background-image: url("./images/home_image.jpeg");
   
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -85,7 +85,7 @@ export default {
   height: 600px;
 
   /* Create background image */
-  background-image: url("../assets/home_image2.jpg");
+  background-image: url("./images/home_image2.jpg");
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
