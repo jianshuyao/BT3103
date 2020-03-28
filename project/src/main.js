@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 //import 'bootstrap-vue@latest/dist/bootstrap-vue-icons.min.css'
-
+/* eslint-disable */
 import Routes from './router'
 
 import Vuetify from "vuetify";

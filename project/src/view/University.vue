@@ -13,15 +13,14 @@
 
     <!-- filters -->
     <button class="filterButton" v-on:click="hideFilter = !hideFilter"> 
-      <i class="fas fa-filter">Apply Filters</i> 
+      <i class="fas fa-filter">Click to Add Filters</i> 
     </button>
-    <div v-if="!hideFilter">
+
+    <div v-if="!hideFilter" class="Row">
       
       <!-- location filter -->
-      <div class='locFilter'>
+      <div class='locFilter Col'>
         <button v-on:click="hideLocationFilter = !hideLocationFilter"><i class="fas fa-map">Location Filter</i></button>
-        
-
         <br>
         <div v-if="!hideLocationFilter">
           <multiselect v-model="filterLocation" 
@@ -37,7 +36,7 @@
       </div>
 
       <!-- length filter -->
-      <div class='lenthFilter'>
+      <div class='lenthFilter Col'>
         <button v-on:click="hideLengthFilter = !hideLengthFilter"><i class="fas fa-calendar-alt">Program Length Filter</i></button>
         <div v-if="!hideLengthFilter">
           <ejs-slider id="range"
@@ -57,14 +56,30 @@
       
     </div>
 
-
     <br>
     <ul>
-      <div>
+      <div class="cards-2">
+          <div class="col-lg-12" >
+              <!-- Card -->
+              <div class="card" v-for="university in getUniversities" v-bind:key="university.id"  >
+                  
+                  <div class="card-body">
+                    <div class="card-image" >
+                      <img class="img-fluid" :src="university.introPic">
+                      </div>
+                    <h3 class="card-title">{{ university.university }}</h3>
+                    <p>{{ university.location }}</p>
+                    <span class="month">{{ university.semesterLength}} Months </span>
+                  </div>
+                  <div class="button-container">
+                      <a class="btn-solid-reg page-scroll" @click="goToUniLink(university)">DETAILS</a>
+                  </div> <!-- end of button-container -->
+              </div>
+
+          </div> <!-- end of col -->
 
         <li @click="goToUniLink(university)" 
-            v-for="university in getUniversities" v-bind:key="university.id"
-            >
+            v-for="university in getUniversities" v-bind:key="university.id">
 
         <!-- https://stackoverflow.com/questions/54863355/vuejs-apply-loop-in-css-to-put-hover -->
         <div @mouseover="university.hover=true"
@@ -246,13 +261,12 @@ export default {
 <style>
 @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
 @import url("https://unpkg.com/vue-multiselect@2.1.0/dist/vue-multiselect.min.css");
-
 @import url("https://cdn.syncfusion.com/ej2/ej2-grids/styles/material.css");
 @import url("https://cdn.syncfusion.com/ej2/ej2-base/styles/material.css");
 @import url("https://cdn.syncfusion.com/ej2/ej2-buttons/styles/material.css");
 @import url("https://cdn.syncfusion.com/ej2/ej2-popups/styles/material.css");
 @import url("https://cdn.syncfusion.com/ej2/ej2-vue-inputs/styles/material.css");
-
+@import './css/styles.css';
 $material-shadow: 0 1px 3px 0 rgba(0,0,0,0.15);
 
 [v-cloak] {
@@ -263,7 +277,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #F3F5F7;
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
 }
 
 .box {
@@ -305,14 +319,19 @@ body {
 } */
 
 .filterButton {
-  background-color: #4CAF50;
-  border: 3px;
   padding: 13px 23px;
   color: white;
   text-align: center;
   text-decoration: none;
-  
-  font-size: 17px;
+  display: inline-block;
+	width: 100%;
+	height: 3.125rem;
+	border: 0.125rem solid #14bf98;
+	border-radius: 0.25rem;
+	background-color: #14bf98;
+	font: 500 1rem/1.75rem "Montserrat", sans-serif;
+	cursor: pointer;
+	transition: all 0.2s;
 }
 
 .locFilter {
@@ -321,6 +340,7 @@ body {
   z-index: 1;
   display: block;
   position:relative;
+  margin-bottom: 1.5rem;
   
 }
 
@@ -328,6 +348,7 @@ body {
   z-index: -2;
   overflow: hidden;
   position:relative;
+  margin-bottom: 1.5rem;
 
 }
 
@@ -337,5 +358,116 @@ body {
   position:relative;
 }
 
+/* Services */
+.cards-2 .card {
+  max-width: 18.25rem;
+  display: inline-block;
+  vertical-align: top;
+}
 
+.cards-2 .col-lg-12 div.card:nth-child(3n+2) {
+  margin-right: 1.25rem;
+  margin-left: 1.25rem;
+}
+/* end of services */
+
+.cards-2 {
+/* padding-top: 6.625rem;	
+padding-bottom: 1.25rem;	 */
+background-color: #fbfbfb;
+}
+
+.cards-2 .section-title {
+/* margin-bottom: 0.5rem; */
+text-align: center;
+}
+
+.cards-2 h2 {
+text-align: center;
+}
+
+.cards-2 p {
+text-align: center;
+}
+
+.cards-2 .card {
+margin-bottom: 1.625rem;
+border: none;
+background-color: transparent;
+}
+
+.cards-2 .card-body {
+padding: 2.25rem 2rem 2.125rem 2rem;
+border: 1px solid #ebe8e8;
+border-bottom-left-radius: 0.375rem;
+border-bottom-right-radius: 0.375rem;
+background-color: #fff;
+}
+
+.cards-2 h3 {
+text-align: center;
+font-size: 1rem;
+}
+
+
+.cards-2 .list-unstyled .fas {
+color: #14bf98;
+font-size: 0.5rem;
+line-height: 1.375rem;
+}
+
+.month {
+color: #14bf98;
+font: 700 1rem/1.5rem "Montserrat", sans-serif;
+font-size: 1rem;
+margin-left: 4.75rem;
+}
+
+
+.cards-2 .col-lg-12 {
+		margin-left: 2rem;
+  }
+  
+.cards-2 .card-image img {
+	border-top-left-radius: 0.375rem;
+  border-top-right-radius: 0.375rem;
+  width: 150px;
+  height: 150px;
+  align-self: center;
+  margin-left: 2.1rem;
+}
+
+.cards-2 .button-container {
+	margin-top: -1.375rem;
+	text-align: center;
+}
+
+.filterButton {
+
+}
+
+.filterButton:hover {
+	background-color: transparent;
+	color: #14bf98;
+}
+
+.Row {
+    display: table;
+    width: 100%; /*Optional*/
+    table-layout: fixed; /*Optional*/
+    border-spacing: 10px; /*Optional*/
+}
+.Col {
+    display: table-cell;
+    text-align: center;
+    padding: 13px 23px;
+    color: white;
+    height: 3.125rem;
+    border: 0.125rem solid #eb9a31;
+    border-radius: 0.25rem;
+    background-color: #eb9a31;
+    font: 500 1rem/1.75rem "Montserrat", sans-serif;
+    cursor: pointer;
+    transition: all 0.2s; 
+}
 </style>

@@ -10,7 +10,7 @@
               <div class="row">
                   <div class="col-lg-12" >
                       <div class="team-member" v-for="member in members" v-bind:key="member.id">
-                          <div class="image-wrapper"><img class="img-fluid" v-bind:src="member.img" ></div> 
+                          <div class="image-wrapper"><img class="img-fluid" :src="member.img"></div> 
                           <p class="p-large">{{member.name}}</p>
                           <p class="job-title">{{member.title}}</p>
                       </div> 
