@@ -9,27 +9,19 @@
 
     <div v-for="info in uni_data" v-bind:key="info.id"> 
       <div class="unipage-container">
-        <div class="home-content-wrap">
-          <div class="w-layout-grid about-grid">
-            <div id="w-node-76c147234d34-3e215c33">
-              <div class="home-section-wrap">
                 
-                <h1 class="section-heading">{{info.university}}</h1>
-                <br>
-                <p class="paragraph-light">{{info.intro}}</p>
-              </div>
-              <br>
-              <div class="info-table table3">
-              <a v-bind:href="info.website">
-                <div>Learn More</div>
-              </a>
-              </div>
-              <br>
-            <!-- </div><img src="./assets/ucsb.png" srcset="images/ucsb-campus-storke-bike-circle-ucen-ocean-p-500.jpeg 500w, images/ucsb-campus-storke-bike-circle-ucen-ocean.jpg 549w" sizes="(max-width: 479px) 94vw, (max-width: 577px) 95vw, 549px" id="w-node-76c147234d3f-3e215c33" alt=""></div> -->
-          </div>
-        </div>
+        <h1>{{info.university}}</h1>
+        <br>
+        <div class="list-content">{{info.intro}}</div>
+        <br>
+        <div class="info-table table3">
+          <a v-bind:href="info.website">
+            <div>Learn More</div>
+          </a>
       </div>
     </div>
+    
+    
 
     <UniDashboard :university="university"></UniDashboard> 
   
@@ -37,44 +29,44 @@
 
       <div class="info-table table1">
         <div class="info-header">
-          <div class="price"><span>Academics</span></div>
+          <div class="price">Academics</div>
           
         </div>
         <ul class="info-list">
-          <li><strong>Academic Calendar</strong></li>
-            <p>{{info.academic_calendar}}</p>
+          <li><strong class="list-title">Academic Calendar</strong></li>
+            <div class="list-content">{{info.academic_calendar}}</div>
           <br>
           <div class="border"></div>
-          <li><strong>Colleges Accepting Students</strong></li>
-          <p><center>{{info.colleges}}</center></p>
+          <li><strong class="list-title">Colleges Accepting Students</strong></li>
+            <div class="list-content"><center>{{info.colleges}}</center></div>
           <br>
           <div class="border"></div>
-          <li><strong>Module Restriction</strong></li>
-          <p>{{info.module_restriction}}</p>
+          <li><strong class="list-title">Module Restriction</strong></li>
+            <div class="list-content">{{info.module_restriction}}</div>
           <br>
           <div class="border"></div>
-          <li><strong>MC Exchange Ratio</strong></li>
-          <p><center>{{info.mc_ratio}}</center></p>
+          <li><strong class="list-title">MC Exchange Ratio</strong></li>
+            <div class="list-content"><center>{{info.mc_ratio}}</center></div>
         </ul>
        <!-- <a href="#">Learn More</a> -->
       </div>
 
       <div class="info-table table2">
         <div class="info-header">
-          <div class="price"><span>Life</span></div>
+          <div class="price">Life</div>
           
         </div>
         <ul class="info-list">
-          <li><strong>Health/Medical Insurance</strong></li>
-            <p>{{info.insurance}}</p>
+          <li><strong class="list-title">Health/Medical Insurance</strong></li>
+            <div class="list-content">{{info.insurance}}</div>
           <br>
           <div class="border"></div>
-          <li><strong>Cost of Living</strong></li>
-            <p><center>Please refer to <a href= 'http://eap.ucop.edu/guides/reciprocity/Pages/default.aspx'>View Cost of Living</a> (and click on ‘Money Matters’): </center></p>
+          <li><strong class="list-title">Cost of Living</strong></li>
+            <div class="list-content"><center>Please refer to <a href= 'http://eap.ucop.edu/guides/reciprocity/Pages/default.aspx'>View Cost of Living</a> (and click on ‘Money Matters’): </center></div>
             <br>
           <div class="border"></div>
-          <li><strong>Weather</strong></li>
-          <p>{{info.weather}}</p>
+          <li><strong class="list-title">Weather</strong></li>
+            <div class="list-content">{{info.weather}}</div>
         </ul>
         <!-- <a href="#">Learn More</a> -->
       </div>
@@ -134,7 +126,8 @@ export default {
 
 body{
   min-height: 100vh;
-  background-image: linear-gradient(125deg,#f3f5f7,#e5ebe7);
+  /*background-image: linear-gradient(125deg,#f3f5f7,#e5ebe7);*/
+  background: transparent !important;
 }
 
 
@@ -149,7 +142,6 @@ body{
 .info-table{
   flex: 1;
   margin: 10px;
-  
 }
 
 .info-header{
@@ -158,15 +150,11 @@ body{
 }
 
 .price{
-  font-size: 40px;
+  font-size: 30px !important;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 0;
-}
-
-.price span{
-  font-size: 30px;
+  padding: 20px 0 !important;
 }
 
 .title{
@@ -178,7 +166,7 @@ body{
   max-width: 360px;
   text-align: center;
   padding: 8px 0;
-  font-size: 14px;
+  font-size: 17px;
 }
 
 .info-list{
@@ -187,7 +175,7 @@ body{
 
 .info-list li{
   margin: 5px 0;
-  font-size: 14px;
+  font-size: 17px;
   color: #344;
   text-align: center;
 }
@@ -214,16 +202,6 @@ body{
   border-radius: 30px;
 }
 
-.table1 .title{
-  background-image: linear-gradient(125deg,#3498db,#9b59b6);
-}
-.table2 .title{
-  background-image: linear-gradient(125deg,#34495e,#95a5a6);
-}
-.table3 .title{
-  background-image: linear-gradient(125deg,#e74c3c,#f39c12);
-}
-
 .table1 a{
   color: #099453;
 }
@@ -232,6 +210,9 @@ body{
 }
 .table3 a{
   color: #099453;
+}
+.table3{
+  background: transparent !important;
 }
 
 .table1 a:hover{
@@ -246,12 +227,22 @@ body{
   background: #099453;
   color: #fff;
 }
-
-@media screen and (max-width:780px) {
+.list-content{
+  font-size:16px !important;
+  line-height: 1.5;
+  color: #787976;
+  padding-bottom: 10px;
+}
+.list-title{
+  font-size:16px !important;
+  line-height: 1.5;
+  color:#484a46;
+}
+/* @media screen and (max-width:780px) {
   .info-table{
     flex: 100%;
   }
-}
+} */
 
 
 </style>

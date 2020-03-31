@@ -26,6 +26,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.copyright-text{
+  font-size: 15px;
+}
+
 .site-footer
 {
   background-color:#ededed;
@@ -128,7 +132,7 @@ export default {
   background-color:#29aafe
 }
 
-@media (max-width:767px)
+/* @media (max-width:767px)
 {
   .social-icons li.title
   {
@@ -136,5 +140,5 @@ export default {
     margin-right:0;
     font-weight:600
   }
-}
+} */
 </style>

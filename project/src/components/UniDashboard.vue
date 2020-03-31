@@ -1,30 +1,28 @@
 <template>
   <div >
     <div class="dashboard-container">
-        <div class="dashboard-title">Listen to previous exchangers...</div>
+        <div class='dashboard-title'>Listen to previous exchangers...</div>
     </div>
     <br>
     <div class="dashboard-container">
         <div class="info-table">
             <div class="dashboard-row">
                 <div class="dashboard-column1">
-                    <div class="rating">
-                        <div class="rating-title">{{this.avg_ratings}}</div>
-                        <p class="rating-p">Experience Ratings</p>
-                    </div>
-                
+                      <div class="rating">
+                          <h1 class="rating-title">{{this.avg_ratings}}</h1>
+                          <div class="rating-p">Experience Ratings</div>
+                      </div>
                 </div>
+
                 <div class="dashboard-column2" id="chart">     
                     <Unicharts :university="university" :width="200" :height="150"></Unicharts>    
                 </div>
 
                 <div class="dashboard-column3">
-                    <div class="info-table">
-                        <div class="mapping">
-                            <div class="mapping-title">{{this.avg_modules}}</div>
-                        <p>Average Modules Mapped</p>
-                    </div>
-                    </div>
+                      <div class="rating">
+                            <h1 class="rating-title">{{this.avg_modules}}</h1>
+                            <div class="rating-p">Avg. Modules Mapped</div>
+                      </div>
                 </div>
             </div>
         </div>
@@ -95,20 +93,21 @@ export default {
   flex-wrap: wrap;
 }
 .dashboard-column1{
-  flex: 20%;
+  flex: 18%;
 }
 .dashboard-column2{
   flex: 60%;
 }
 .dashboard-column3{
-  flex: 20%;
+  flex: 22%;
 }
 .dashboard-row{
   display: flex;
 }
 .dashboard-title{
   font-weight: 600;
-  font-size: 25px;
+  font-size: 25px !important;
+  color: #484a46 !important;
 }
 .info-table a{
   display: block;
@@ -126,28 +125,22 @@ export default {
 }
 .rating{
   text-align: center;
-  padding-bottom: 15px;
-  padding-top: 25px;
   font-size: 20px;
   justify-content: center;
+  color: #484a46 !important;
 }
 .rating-title{
   font-weight: 600;
   font-size: 40px;
+  color: #484a46 !important;
+}
+h1{
+  margin-top: 25px !important;
+  margin-bottom: 20px !important;
 }
 .rating-p{
   text-align: center;
-  padding-top: 5px;
-}
-.mapping{
-  text-align: center;
-  padding-bottom: 15px;
-  padding-top: 15px;
-  font-size: 20px;
-  justify-content: center;
-}
-.mapping-title{
-  font-weight: 600;
-  font-size: 40px;
+  color: gray !important;
+  font-size: 16px;
 }
 </style>

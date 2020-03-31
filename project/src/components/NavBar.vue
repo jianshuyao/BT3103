@@ -51,7 +51,7 @@ export default {
 .navbar.navbar-light .navbar-brand span{
   color:#696969;
   font-weight:600;
-  font-size: 130%;
+  font-size: 25px;
   letter-spacing: 1px;
   font-family:"Arial";
   margin-left: 30px;
