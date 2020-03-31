@@ -12,11 +12,6 @@
                   <i class="fab fa-github"></i>
                 </a>
               </li> 
-              <li>
-                <a class="twitter" href="https://github.com/jianshuyao/BT3103">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
         </ul>
       </div>
     </nav>
