@@ -94,12 +94,14 @@ export default {
 }
 .dashboard-column1{
   flex: 18%;
+  position: relative;
 }
 .dashboard-column2{
   flex: 60%;
 }
 .dashboard-column3{
   flex: 22%;
+  position: relative;
 }
 .dashboard-row{
   display: flex;
@@ -128,6 +130,13 @@ export default {
   font-size: 20px;
   justify-content: center;
   color: #484a46 !important;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%) 
 }
 .rating-title{
   font-weight: 600;
@@ -135,11 +144,9 @@ export default {
   color: #484a46 !important;
 }
 h1{
-  margin-top: 25px !important;
   margin-bottom: 20px !important;
 }
 .rating-p{
-  text-align: center;
   color: gray !important;
   font-size: 16px;
 }
