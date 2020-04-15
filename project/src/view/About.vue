@@ -42,7 +42,12 @@
 	<div class="tabs">
       <div class="area-1">
             <div class="tabs-container">
-                <h2>Why choose us</h2><br>            
+                <h2>Why choose us</h2>
+                <h7>A one-stop Student Exchange Programme Search Platform for interested students! Our application has two major functions.
+Firstly, our website acts as an information repository, displaying information about the various universities, their academic programmes,
+the preparation required by students before going for a programme, and also, the ratings of each programme by past students.
+Secondly, our website is also designed to be a user-friendly search platform with word searches and filtered searches
+enabled to allow students to find the program that suits them best, based on their personal preferences.</h7>            
                 <div class="item" v-for="(bnf,index) in benefits" v-bind:key="bnf.id">
                     <span aria-expanded="true">
                         <span class="circle-numbering">{{index+1}}</span>
