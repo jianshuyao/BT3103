@@ -24,11 +24,11 @@
     <div class = "content">
         <h3 style="text-align:center; font-size:20px;">Student Exchange Programme</h3>
         <div class="sep-content">
-        The Student Exchange Programme (SEP) is the largest and most established global programme in NUS. Through the development and management of strategic and sustainable partnerships with universities globally, Global Relations Office (GRO) strives to ensure a quality exchange experience for all outgoing and incoming students. More than 90% of both outgoing and incoming students are highly satisfied with their SEP experience. More than 95% of our overseas SEP alumni would recommend NUS to their peers at their home universities, while almost all returned SEP exchangers would gladly participate in SEP again if given the chance.
+        The Student Exchange Programme (SEP) is the largest and most established global programme in NUS. Through the development and management of strategic and sustainable partnerships with a wide range of renowned universities globally, the Global Relations Office (GRO) strives to ensure a quality exchange experience for all our outgoing and incoming students. More than 90% of both outgoing and incoming students are highly satisfied with their SEP experiences. Furthermore, more than 95% of our overseas SEP alumni would recommend NUS to their peers at their home universities, while almost all returned SEP exchangers would gladly participate in SEP again, if given the chance.
         </div>
 
         <div class="sep-content">
-        NUS students are able to choose from over 300 partner universities in more than 40 countries for their SEP experience. In AY 2017/18, approximately 2,000 NUS students embarked on SEP while close to 2,000 incoming students were received from our partner universities. We welcome students to participate in exchange to broaden their horizons and gain essential soft skills in preparation for the world after graduation.
+        NUS students are able to choose from over 300 partner universities from more than 40 countries for their SEP experience. In AY 2017/18, approximately 2,000 NUS students embarked on SEP while close to 2,000 incoming students were received from our partner universities. We welcome students to participate in exchange programmes in order to broaden their horizons and gain a variety of essential soft skills in preparation for the world after graduation.
         </div>
       </div>
 
@@ -45,7 +45,7 @@
             <router-link to='/University'>
               <button class="btn btn-danger btn-middle">
                 <i class="fas fa-train" style="margin:0 10px 0 0;"></i>
-                Search Programme
+                Search Programmes
               </button>
             </router-link>
          </div>
