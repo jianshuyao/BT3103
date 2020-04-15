@@ -30,7 +30,7 @@
                       group-label="continent" 
                       :group-select="true" 
                       placeholder="Type to search">
-                      <span slot="noResult">Oops! No elements found. Consider changing the search query.</span></multiselect>
+                      <span slot="noResult">Oops! No elements found. Consider modifying the search query.</span></multiselect>
         <br>
         </div>
       </div>
