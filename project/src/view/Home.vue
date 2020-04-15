@@ -36,10 +36,10 @@
         <div class="home_container">
           <div class="home-title">
             <i class="fas fa-globe-asia"></i>
-            Discovering the Globe
+            Find the perfect fit for YOU!
           </div>
           <div class="about">
-            Explore new vistas on the Student Exchange Programme
+            View all Student Exchange Programmes collated RIGHT HERE
           </div>
           <div class="centered">
             <router-link to='/University'>
