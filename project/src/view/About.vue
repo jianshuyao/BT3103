@@ -5,6 +5,9 @@
           <div class="container">
               <div class="row">
                   <div class="col-lg-12"><h2>Who we are</h2></div> <!-- end of col -->
+                  <h6>We are Team Withdrawal- the group of NUS Students behind the “SEP Searcher”!
+                      We have designed our platform to address the issues students face when searching for
+                      student exchange placements and in this way, ensure a smooth journey for all our applicants.</h6>
               </div> <!-- end of row -->
 
               <div class="row">
