@@ -27,6 +27,11 @@
         <div class="area-2">
             <div class="accordion-container">
                 <h2>What we offer</h2>
+                <h7>A one-stop Student Exchange Programme Search Platform for interested students! Our application has two major functions.
+Firstly, our website acts as an information repository, displaying information about the various universities, their academic programmes,
+the preparation required by students before going for a programme, and also, the ratings of each programme by past students.
+Secondly, our website is also designed to be a user-friendly search platform with word searches and filtered searches
+enabled to allow students to find the program that suits them best, based on their personal preferences.</h7>
                 <div class="item" v-for="(fcn,index) in functions" v-bind:key="fcn.id">
                     <span aria-expanded="true" >
                         <span class="circle-numbering">{{index+1}}</span>
@@ -42,12 +47,11 @@
 	<div class="tabs">
       <div class="area-1">
             <div class="tabs-container">
-                <h2>Why choose us</h2>
-                <h7>A one-stop Student Exchange Programme Search Platform for interested students! Our application has two major functions.
-Firstly, our website acts as an information repository, displaying information about the various universities, their academic programmes,
-the preparation required by students before going for a programme, and also, the ratings of each programme by past students.
-Secondly, our website is also designed to be a user-friendly search platform with word searches and filtered searches
-enabled to allow students to find the program that suits them best, based on their personal preferences.</h7>            
+                <h2>Why choose us</h2><br>
+                <h7>Our platform offers everything our users want!
+                    We are the MOST user-friendly among other platforms out there.
+                    From our robust search functionality that is quick and simple to use to our centralised information database,
+                    our platform is catered to YOUR needs!</h7>            
                 <div class="item" v-for="(bnf,index) in benefits" v-bind:key="bnf.id">
                     <span aria-expanded="true">
                         <span class="circle-numbering">{{index+1}}</span>
