@@ -52,7 +52,7 @@
       </div>
     </div>
     <br>
-    <h3 style="text-align:center; font-size:20px;">SEP Searcher Statistics Dashboard</h3>
+    <h3 style="text-align:center; font-size:20px;">SEP Searcher Statistics Dashboard</h3><br>
 
   </div>
 

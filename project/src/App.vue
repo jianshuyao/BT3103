@@ -7,7 +7,8 @@
     <NavBar></NavBar>
     <router-view></router-view>
     <visualisation></visualisation><br>
-    <horizontal-bar-chart></horizontal-bar-chart>
+    <horizontal-bar-chart></horizontal-bar-chart><br>
+    <line-chart></line-chart>
     <Footer></Footer>
   </div>
 </template>
@@ -16,6 +17,7 @@
 import NavBar from './components/NavBar.vue';
 import Visualisation from './components/Visualisation.vue';
 import HorizontalBarChart from './components/HorizontalBarChart.vue';
+import LineChart from './components/LineChart.vue';
 import Footer from './components/Footer.vue';
 
 export default {
@@ -23,6 +25,7 @@ export default {
     NavBar,
     Visualisation,
     HorizontalBarChart,
+    LineChart,
     Footer
   }
 }

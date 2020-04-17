@@ -1,5 +1,8 @@
 <template>
-    <chart :chart-data="datacollection"></chart>
+  <div class="chart">
+    <h4>Number of Students doing SEP per Faculty</h4>
+    <chart></chart>
+  </div>
 </template>
     
 <script>
