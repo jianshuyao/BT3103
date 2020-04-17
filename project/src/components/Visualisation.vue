@@ -1,7 +1,8 @@
 <template>
-              <chart :chart-data="datacollection"></chart>
-    </template>
-    <script>
+    <chart :chart-data="datacollection"></chart>
+</template>
+    
+<script>
     import Chart from "./../Chart.js";
     export default {
       components: {
@@ -40,5 +41,6 @@
       }
     };
     </script>
+    
 <style>
 </style>

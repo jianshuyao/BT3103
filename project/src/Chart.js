@@ -15,6 +15,10 @@ export default {
             responsive: true,
             maintainAspectRatio: false,
             scaleBeginAtZero: true,
+            title: {
+                display: true,
+                text: "Number of Students doing SEP per Faculty"
+            },
             scales: {
                 xAxes: [{
                     stacked: false,

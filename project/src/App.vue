@@ -6,20 +6,23 @@
         crossorigin="anonymous">
     <NavBar></NavBar>
     <router-view></router-view>
-    <visualisation></visualisation>
+    <visualisation></visualisation><br>
+    <horizontal-bar-chart></horizontal-bar-chart>
     <Footer></Footer>
   </div>
 </template>
 
 <script>
-import NavBar from './components/NavBar.vue'
+import NavBar from './components/NavBar.vue';
 import Visualisation from './components/Visualisation.vue';
-import Footer from './components/Footer.vue'
+import HorizontalBarChart from './components/HorizontalBarChart.vue';
+import Footer from './components/Footer.vue';
 
 export default {
   components: {
     NavBar,
     Visualisation,
+    HorizontalBarChart,
     Footer
   }
 }
