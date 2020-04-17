@@ -9,7 +9,7 @@
     <visualisation></visualisation><br>
     <horizontal-bar-chart></horizontal-bar-chart><br>
     <line-chart></line-chart><br>
-    <pie-chart></pie-chart>
+    <pie-chart></pie-chart><br>
     <Footer></Footer>
   </div>
 </template>
