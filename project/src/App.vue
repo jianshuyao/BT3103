@@ -6,6 +6,9 @@
         crossorigin="anonymous">
     <NavBar></NavBar>
     <router-view></router-view>
+    <br>
+    <h3 style="text-align:center; font-size:20px;">SEP Searcher Statistics Dashboard</h3>
+    <br>
     <visualisation></visualisation><br>
     <horizontal-bar-chart></horizontal-bar-chart><br>
     <line-chart></line-chart><br>
