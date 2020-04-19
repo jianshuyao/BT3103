@@ -49,7 +49,18 @@
               </button>
             </router-link>
          </div>
+         <br>
       </div>
+    </div>
+    
+    <div>
+      <br>
+      <h3 style="text-align:center; font-size:20px;">SEP Searcher Statistics Dashboard</h3>
+      <br>
+      <visualisation></visualisation><br>
+      <horizontal-bar-chart></horizontal-bar-chart><br>
+      <line-chart></line-chart><br>
+      <pie-chart></pie-chart><br>
     </div>
 
   </div>
@@ -57,14 +68,32 @@
 </template>
 
 <script>
+import Visualisation from '../components/Visualisation.vue';
+import HorizontalBarChart from '../components/HorizontalBarChart.vue';
+import LineChart from '../components/LineChart.vue';
+import PieChart from '../components/PieChart.vue';
   
 export default {
-  name: 'Home' //this is the name of the component
+  name: 'Home', //this is the name of the component
+  components: {
+    Visualisation,
+    HorizontalBarChart,
+    LineChart,
+    PieChart
+  }
 }
 </script>
 
 <style>
 /* Container holding the image and the text */
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-align: center;
+      color: #2c3e50;
+      margin-top: 60px;
+}
 
 .parallax1  {
   position: relative;

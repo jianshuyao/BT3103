@@ -6,32 +6,17 @@
         crossorigin="anonymous">
     <NavBar></NavBar>
     <router-view></router-view>
-    <br>
-    <h3 style="text-align:center; font-size:20px;">SEP Searcher Statistics Dashboard</h3>
-    <br>
-    <visualisation></visualisation><br>
-    <horizontal-bar-chart></horizontal-bar-chart><br>
-    <line-chart></line-chart><br>
-    <pie-chart></pie-chart><br>
     <Footer></Footer>
   </div>
 </template>
 
 <script>
 import NavBar from './components/NavBar.vue';
-import Visualisation from './components/Visualisation.vue';
-import HorizontalBarChart from './components/HorizontalBarChart.vue';
-import LineChart from './components/LineChart.vue';
-import PieChart from './components/PieChart.vue';
 import Footer from './components/Footer.vue';
 
 export default {
   components: {
     NavBar,
-    Visualisation,
-    HorizontalBarChart,
-    LineChart,
-    PieChart,
     Footer
   }
 }
