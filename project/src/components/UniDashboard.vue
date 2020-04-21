@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import Unicharts from './UniCharts.js'
+import Unicharts from './UniChart.js'
 import database from '../firebase.js'
 
 export default {
