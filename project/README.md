@@ -1,24 +1,53 @@
-# project
+# SEP Searcher
 
-## Project setup
+One-stop platform for SEP program search and information repository of partner universities
+
+## File Structure
+Within the download you'll find the following directories and files:
 ```
-npm install
+project/
+
+├── README.md
+├── public
+│   └── index.html
+├── src
+│   ├── App.vue
+│   ├── main.js
+│   ├── router.js
+│   ├── firebase.js
+│   ├── assets
+│   │   ├── nus logo
+│   ├── components
+│   │   ├── NavBar.vue
+│   │   ├── Footer.vue
+│   │   ├── UniPage.vue
+│   │   ├── UniDashboard.vue
+│   │   ├── FacultyChart.js
+│   │   ├── ContinentChart.js
+│   │   ├── UserChart.js
+│   │   ├── YearChart.js
+│   │   └── UniChart.js
+│   └── views
+│       ├── Home.vue
+│       ├── Program.vue
+│       ├── About.vue
+│       ├── Contact.vue
+│       └── univerisity page
+│       │   ├── university pages (vue)
+│       │   ├── assets
+│       │       └── university background (img)
+        └── assets
+│           ├── member profile (img)
+│           ├── home background (img)
+│           ├── about background (img)
+│           └── view style (css) 
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Team Member
+- Ryan Ch'ng
+- Dong Han
+- Hu Yidi
+- Jian Shuyao
+- Kirat Kaur
+- Yang Bixuan
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
