@@ -16,7 +16,7 @@
             </router-link>
           </li>
           <li>
-            <router-link class="nav-link" to="/University" exact>
+            <router-link class="nav-link" to="/Program" exact>
               <i class="fas fa-university"></i>
               Programs
             </router-link>

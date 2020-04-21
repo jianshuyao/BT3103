@@ -7,7 +7,7 @@ import FDU from './view/university_page/fdu.vue'
 import ICL from './view/university_page/icl.vue'
 import PKU from './view/university_page/pku.vue'
 import TSINGHUA from './view/university_page/tsinghua.vue'
-import UCSB from './view/university_page/ucsb2.vue'
+import UCSB from './view/university_page/ucsb.vue'
 import UOFT from './view/university_page/uoft.vue'
 import UTOKYO from './view/university_page/utokyo.vue'
 
@@ -23,7 +23,7 @@ export default[
       component: Home
     },
     {
-      path: '/University',
+      path: '/Program',
       component: University 
     },
     {

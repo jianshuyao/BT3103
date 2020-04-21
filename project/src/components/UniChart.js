@@ -17,7 +17,8 @@ export default{
                     {
                     label: 'Data One',
                     backgroundColor: '#099453',
-                    data: [1,2,3,4,5]
+                    data: [1,2,3,4,5],
+                    categoryPercentage: 0.6,
                     }
                 ]
             },
@@ -39,7 +40,7 @@ export default{
                     gridlines:{
                         display: false
                     },
-                    barPercentage: 0.6,
+                    //barPercentage: 0.6,
                   }],
                   xAxes: [{
                     ticks: {

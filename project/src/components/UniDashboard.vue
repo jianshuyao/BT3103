@@ -52,16 +52,16 @@ export default {
             console.log(this.university)
             database.collection('survey').get().then((querySnapShot)=>{
               let uni={}
+              let count_ratings=0
+              let count_modules=0
+              let total_ratings = 0
+              let total_modules = 0
              
               querySnapShot.forEach(doc=>{
                 uni=doc.data()
                 uni.show=false
                 uni.id=doc.id
-                let count_ratings=0
-                let count_modules=0
-                let total_ratings = 0
-                let total_modules = 0
-      
+
                 if (uni.university == this.university) {
                   count_ratings += 1
                   count_modules += 1
@@ -72,7 +72,14 @@ export default {
                 //console.log(total_ratings)
                 this.avg_ratings = (total_ratings / count_ratings).toFixed(1)
                 this.avg_modules = (total_modules / count_modules).toFixed(1)
-                //console.log(ratings)
+                if (count_ratings == 0){
+                  this.avg_ratings = 0
+                }
+                if (count_modules == 0){
+                  this.avg_modules = 0
+                } 
+                //console.log("ratings:", total_ratings)
+                //console.log("modules:", total_modules)
                 
               //console.log(this.chart.datasets[0].data)   
               })

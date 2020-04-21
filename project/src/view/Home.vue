@@ -10,8 +10,8 @@
         <div class="about">
           Explore new vistas on the Student Exchange Programme
         </div>
-        <div class="centered">
-          <router-link to='/University'>
+        <div class="centered1">
+          <router-link to='/Program'>
             <button class="btn btn-success btn-middle">
               <i class="fas fa-plane" style="margin:0 10px 0 0;"></i>
               Search Programme
@@ -30,19 +30,26 @@
         <div class="sep-content">
         NUS students are able to choose from over 300 partner universities from more than 40 countries for their SEP experience. In AY 2017/18, approximately 2,000 NUS students embarked on SEP while close to 2,000 incoming students were received from our partner universities. We welcome students to participate in exchange programmes in order to broaden their horizons and gain a variety of essential soft skills in preparation for the world after graduation.
         </div>
+        <br>
+      <h3 style="text-align:center; font-size:20px;">SEP Searcher Statistics Dashboard</h3>
+      <br>
+      <visualisation></visualisation><br>
+      <horizontal-bar-chart></horizontal-bar-chart><br>
+      <line-chart></line-chart><br>
+      <pie-chart></pie-chart><br>
       </div>
 
       <div class="parallax2">
         <div class="home_container">
           <div class="home-title">
             <i class="fas fa-globe-asia"></i>
-            Find the perfect fit for YOU!
+            Find the Perfect Fit for You
           </div>
           <div class="about">
-            View all Student Exchange Programmes collated RIGHT HERE
+            View all Student Exchange Programmes HERE
           </div>
-          <div class="centered">
-            <router-link to='/University'>
+          <div class="centered2">
+            <router-link to='/Program'>
               <button class="btn btn-danger btn-middle">
                 <i class="fas fa-train" style="margin:0 10px 0 0;"></i>
                 Search Programmes
@@ -52,7 +59,7 @@
          <br>
       </div>
     </div>
-    
+    <!--
     <div>
       <br>
       <h3 style="text-align:center; font-size:20px;">SEP Searcher Statistics Dashboard</h3>
@@ -62,7 +69,7 @@
       <line-chart></line-chart><br>
       <pie-chart></pie-chart><br>
     </div>
-
+    !-->
   </div>
 
 </template>
@@ -146,7 +153,7 @@ export default {
   margin: auto;
   position: absolute;
   font-size: 35px;
-  top: 18%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -166,7 +173,7 @@ export default {
   text-align: center;
   position: absolute;
   font-size: 22px;
-  top: 30%;
+  top: 37%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -190,9 +197,16 @@ export default {
   text-align: justify;
 }
 
-.centered {
+.centered1 {
   position: absolute;
   top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centered2 {
+  position: absolute;
+  top: 57%;
   left: 50%;
   transform: translate(-50%, -50%);
 }

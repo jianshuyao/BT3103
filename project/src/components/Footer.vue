@@ -8,7 +8,7 @@
         </div>
         <ul class="nav navbar-nav social-icons">
           <li>
-                <a class="github" href="https://github.com/jianshuyao/BT3103">
+                <a class="github" href="https://github.com/jianshuyao/BT3103/tree/master/project">
                   <i class="fab fa-github"></i>
                 </a>
               </li> 
