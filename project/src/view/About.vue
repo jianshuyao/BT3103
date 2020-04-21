@@ -112,23 +112,23 @@ created(){
 <style scoped>
 @import './css/styles.css'; 
 img {
-    width:540px; /* you can use % */
-    height: auto;
+    width:540px !important; /* you can use % */
+    height: auto !important;
 }
 .basic-2 .team-member {
-	display: inline-block;
-	max-width: 12rem;
-	margin-right: 1.5rem;
-	margin-bottom: 0.5rem;
-	margin-left: 1.5rem;
+	display: inline-block !important;
+	max-width: 12rem !important;
+	margin-right: 1.5rem !important;
+	margin-bottom: 0.5rem !important;
+	margin-left: 1.5rem !important;
 }
 .basic-2 .team-member .p-large {
-	margin-bottom: 0.25rem;
+	margin-bottom: 0.25rem !important;
 }
 .basic-2 .team-member .job-title {
-	margin-bottom: 0.75rem;
-	color: #484a46;
-	font: 700 1rem/1.375rem "Montserrat", sans-serif;
+	margin-bottom: 0.75rem !important;
+	color: #484a46 !important;
+	font: 700 1rem/1.375rem "Montserrat", sans-serif !important;
 }
 
 </style>

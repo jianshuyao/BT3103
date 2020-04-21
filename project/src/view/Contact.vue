@@ -68,23 +68,18 @@
 </script>
 
 <style scoped>
-/* @import './css/bootstrap.css';
-@import './css/styles.css';
-@import './css/fontawesome-all.css';
-@import './css/magnific-popup.css';
-@import './css/swiper.css'; */
 
 .form-group {
-  color: black;
+  color: black !important;
 }
 
 .form-2 .text-container {
-  margin-bottom: 3rem;
-  color: black;
+  margin-bottom: 3rem !important;
+  color: black !important;
 }
 
 .text-container{
-    text-align: center;
+    text-align: center !important;
 }
 
 </style>
