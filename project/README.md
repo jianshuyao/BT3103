@@ -1,4 +1,4 @@
-# SEP Searcher
+# SEP Searcher by Team Withdrawal
 
 One-stop platform for SEP program search and information repository of partner universities
 
