@@ -11,14 +11,14 @@
                 <br>
                 <p class="paragraph-light">Peking University (PKU), is a major Chinese research university located in
 Beijing and a member of the C9 League. It is the first modern national
-university established in China, founded initially as the "Imperial University of
+university established in China, founded as the "Imperial University of
 Peking" in 1898 as a replacement of the ancient Taixue or Guozijian, or
 Imperial Academy. It also served as the highest administration for
-education in China at the beginning of its founding. By 1920, it had become recognized as 
+education in China at the beginning of its founding. By 1920, it had become
 a center for progressive thought.
 Peking University is consistently ranked as one of the top higher learning
-institutions in mainland China. In addition to academics, Peking University is
-especially renowned for its lush and scenic campus grounds and the beauty of its traditional
+institution in mainland China. In addition to academics, Peking University is
+especially renowned for its campus grounds and the beauty of its traditional
 Chinese architecture.
 </p>
               </div>
@@ -92,10 +92,10 @@ Insurance</strong></li>
             <p>All NUS matriculated students are covered under the NUS Travel Insurance
 Policy for personal accident and medical expenses incurred by NUS students
 on NUS approved overseas trips. If the coverage is not comprehensive,
-students are welcome to purchase indiviual additional travel insurance. </p>
+students are welcome to purchase their additional travel insurance. </p>
           <br>
           <p>The Chinese Ministry of Education requires that all international students
-be medically insured throughout their period of study in China. This policy is crucial to ensuring
+be medically insured throughout their study in China. This policy is crucial to
 the health, wellness and success of international students. Students who
 study at Peking University for more than one semester are required to
 purchase the University’s recommended medical insurance on the day of
@@ -112,7 +112,7 @@ not allowed to register.</p>
             <br>
           <div class="border"></div>
           <li><strong>Weather</strong></li>
-          <p>July is the hottest month in Beijing with an average temperature of 27°C (81°F) and the coldest month occurs in January at -4°C (25°F), while the most daily sunshine hours of 12 hours occurs in June. The wettest month is August, with an average of 182mm of rain.
+          <p>July is the hottest month in Beijing with an average temperature of 27°C (81°F) and the coldest is January at -4°C (25°F) with the most daily sunshine hours at 12 in June. The wettest month is August with an average of 182mm of rain.
 
 </p>
         </ul>
@@ -121,7 +121,7 @@ not allowed to register.</p>
     </div>
 
     <div class="info-table table3">
-        <router-link to="/University">Go Back to Programme List</router-link>
+        <router-link to="/University">Go Back to Programme list</router-link>
     </div>
   </body>
 </template>
