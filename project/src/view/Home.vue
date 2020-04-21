@@ -68,10 +68,10 @@
 </template>
 
 <script>
-import Visualisation from '../components/Visualisation.vue';
-import HorizontalBarChart from '../components/HorizontalBarChart.vue';
-import LineChart from '../components/LineChart.vue';
-import PieChart from '../components/PieChart.vue';
+import Visualisation from '../components/FacultyChart.js';
+import HorizontalBarChart from '../components/ContinentChart.js';
+import LineChart from '../components/YearChart.js';
+import PieChart from '../components/UserChart.js';
   
 export default {
   name: 'Home', //this is the name of the component

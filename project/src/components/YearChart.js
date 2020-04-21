@@ -18,6 +18,9 @@ export default {
                     display: true,
                     text: 'Number of Students doing SEP each Year'
                 },
+                legend:{
+                    display:false
+                },
                 scales: {
                     xAxes: [{
                         stacked: false,

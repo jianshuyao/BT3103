@@ -4,7 +4,7 @@ export default {
     extends: Bar,
     data: () => ({
         chartdata: {
-            labels: ['FASS', 'FoE', "Music", "FoS", "Business", "D&E", "SoC", "Dentistry"],
+            labels: ['FASS', 'FoE', "Music", "FoS", "Business", "SDE", "SoC", "Dentistry"],
             datasets: [{
                 label: "Number of Students",
                 backgroundColor: '#f87979',
@@ -18,6 +18,9 @@ export default {
             title: {
                 display: true,
                 text: "Number of Students doing SEP per Faculty"
+            },
+            legend:{
+                display:false
             },
             scales: {
                 xAxes: [{
