@@ -7,7 +7,7 @@ export default {
             datacollection: {
                 labels: ["2016", "2017", "2018", "2019"],
                 datasets: [{
-                    data: [6, 10, 12, 16],
+                    data: [1540, 2680, 3970, 4510],
                     label: "Number of Students",
                     borderColor: "#32CD32",
                     fill: false
@@ -18,8 +18,8 @@ export default {
                     display: true,
                     text: 'Number of Students doing SEP each Year'
                 },
-                legend:{
-                    display:false
+                legend: {
+                    display: false
                 },
                 scales: {
                     xAxes: [{

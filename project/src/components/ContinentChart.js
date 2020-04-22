@@ -5,11 +5,11 @@ export default {
     data: function() {
         return {
             datacollection: {
-                labels: ["USA", "China", "Japan", "UK", "Singapore"],
+                labels: ["North America", "Asia Pacific", "Europe"],
                 datasets: [{
                     label: "Number of Students",
                     backgroundColor: "#3e95cd",
-                    data: [13, 10, 5, 9, 7]
+                    data: [5300, 2730, 4670]
                 }]
             },
             options: {
@@ -19,7 +19,7 @@ export default {
                 legend: { display: false },
                 title: {
                     display: true,
-                    text: 'Number of Students doing SEP in Each Country'
+                    text: 'Number of Students doing SEP in Each Continent'
                 },
                 scales: {
                     xAxes: [{

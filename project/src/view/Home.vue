@@ -33,10 +33,23 @@
         <br>
       <h3 style="text-align:center; font-size:20px;">SEP Searcher Statistics Dashboard</h3>
       <br>
-      <visualisation></visualisation><br>
-      <horizontal-bar-chart></horizontal-bar-chart><br>
-      <line-chart></line-chart><br>
-      <pie-chart></pie-chart><br>
+      <div align="center">
+        <div style="display: inline-block">
+          <visualisation></visualisation>
+        </div>
+        <div style="display: inline-block">
+          <horizontal-bar-chart></horizontal-bar-chart>
+        </div>
+      </div>
+      <br>
+      <div align="center">
+        <div style="display: inline-block">
+          <line-chart></line-chart>
+        </div>
+        <div style="display: inline-block">
+          <pie-chart></pie-chart>
+        </div>
+      </div>
       </div>
 
       <div class="parallax2">

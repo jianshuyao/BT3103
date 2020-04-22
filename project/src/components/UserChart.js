@@ -9,13 +9,13 @@ export default {
                 datasets: [{
                     label: "Number of Students",
                     backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
-                    data: [0, 0, 5, 17, 22]
+                    data: [81, 124, 2707, 5765, 4023]
                 }]
             },
             options: {
                 title: {
                     display: true,
-                    text: 'Average Rating of SEP Searcher platform by Users (over 5)'
+                    text: 'Rating of SEP Searcher platform by Users (mean rating = 4.06)'
                 },
                 responsive: true,
                 maintainAspectRatio: false
