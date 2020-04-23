@@ -110,6 +110,10 @@ export default {
   flex: 22%;
   position: relative;
 }
+.dashboard-column4{
+  flex: 50%;
+  position: relative;
+}
 .dashboard-row{
   display: flex;
 }
@@ -146,8 +150,8 @@ export default {
   transform: translate(-50%, -50%) 
 }
 .rating-title{
-  font-weight: 600;
-  font-size: 40px;
+  font-weight: 600 !important;
+  font-size: 40px !important;
   color: #484a46 !important;
 }
 h1{

@@ -15,7 +15,8 @@ export default {
             options: {
                 title: {
                     display: true,
-                    text: 'Rating of SEP Searcher platform by Users (mean rating = 4.06)'
+                    text: 'Rating of SEP Searcher platform by Users (mean rating = 4.06)',
+                    fontSize: 16
                 },
                 responsive: true,
                 maintainAspectRatio: false

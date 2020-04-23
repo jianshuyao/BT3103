@@ -22,7 +22,7 @@
     </div>
 
     <div class = "content">
-        <h3 style="text-align:center; font-size:20px;">Student Exchange Programme</h3>
+        <h3 style="text-align:center;">Student Exchange Programme</h3>
         <div class="sep-content">
         The Student Exchange Programme (SEP) is the largest and most established global programme in NUS. Through the development and management of strategic and sustainable partnerships with a wide range of renowned universities globally, the Global Relations Office (GRO) strives to ensure a quality exchange experience for all our outgoing and incoming students. More than 90% of both outgoing and incoming students are highly satisfied with their SEP experiences. Furthermore, more than 95% of our overseas SEP alumni would recommend NUS to their peers at their home universities, while almost all returned SEP exchangers would gladly participate in SEP again, if given the chance.
         </div>
@@ -32,22 +32,22 @@
         </div>
         <br>
       <h3 style="text-align:center; font-size:20px;">SEP Searcher Statistics Dashboard</h3>
-      <br>
-      <div align="center">
-        <div style="display: inline-block">
-          <visualisation></visualisation>
+      
+      <div class="chart-row">
+        <div class="chart-column">
+          <FacultyChart class="chart"></FacultyChart>
         </div>
-        <div style="display: inline-block">
-          <horizontal-bar-chart></horizontal-bar-chart>
+        <div class="chart-column">
+          <ContinentChart class="chart"></ContinentChart>
         </div>
       </div>
       <br>
-      <div align="center">
-        <div style="display: inline-block">
-          <line-chart></line-chart>
+      <div class="chart-row" align="center">
+        <div class="chart-column">
+          <YearChart class="chart"></YearChart>
         </div>
-        <div style="display: inline-block">
-          <pie-chart></pie-chart>
+        <div class="chart-column">
+          <UserChart class="chart"></UserChart>
         </div>
       </div>
       </div>
@@ -88,18 +88,18 @@
 </template>
 
 <script>
-import Visualisation from '../components/FacultyChart.js';
-import HorizontalBarChart from '../components/ContinentChart.js';
-import LineChart from '../components/YearChart.js';
-import PieChart from '../components/UserChart.js';
+import FacultyChart from '../components/FacultyChart.js';
+import ContinentChart from '../components/ContinentChart.js';
+import YearChart from '../components/YearChart.js';
+import UserChart from '../components/UserChart.js';
   
 export default {
   name: 'Home', //this is the name of the component
   components: {
-    Visualisation,
-    HorizontalBarChart,
-    LineChart,
-    PieChart
+    FacultyChart,
+    ContinentChart,
+    YearChart,
+    UserChart
   }
 }
 </script>
@@ -227,7 +227,7 @@ export default {
 h3 {
   letter-spacing: 5px;
   text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
+  font: 20px "Lato", sans-serif !important;
   color: #111;
 }
 
@@ -253,5 +253,26 @@ h3 {
   padding-top: 5px;
   line-height: 1.5;
 }
+
+.chart-column{
+  float: left;
+  width: 50%;
+  padding: 10px 30px;
+}
+
+.chart-row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.chart-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.chart{
+  height:300px !important;
+  width:500px !important;
+}
+
 
 </style>

@@ -17,7 +17,8 @@ export default {
             scaleBeginAtZero: true,
             title: {
                 display: true,
-                text: "Number of Students doing SEP per Faculty"
+                text: "Number of Students doing SEP per Faculty",
+                fontSize: 16
             },
             legend: {
                 display: false

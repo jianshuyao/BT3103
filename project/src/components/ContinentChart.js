@@ -19,7 +19,8 @@ export default {
                 legend: { display: false },
                 title: {
                     display: true,
-                    text: 'Number of Students doing SEP in Each Continent'
+                    text: 'Number of Students doing SEP in Each Continent',
+                    fontSize: 16
                 },
                 scales: {
                     xAxes: [{

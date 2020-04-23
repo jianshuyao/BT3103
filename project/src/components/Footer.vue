@@ -9,7 +9,7 @@
         <ul class="nav navbar-nav social-icons">
           <li>
                 <a class="github" href="https://github.com/jianshuyao/BT3103/tree/master/project">
-                  <i class="fab fa-github"></i>
+                  <i class="fab fa-github" title="View Code in GitHub"></i>
                 </a>
               </li> 
         </ul>
@@ -27,7 +27,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .copyright-text{
-  font-size: 15px;
+  font-size: 15px !important;
 }
 
 .site-footer
@@ -98,7 +98,7 @@ export default {
 
 .social-icons a{
   background-color:#828282;
-  color:#fff;
+  color:#fff !important;
   font-size:25px;
   display:inline-block;
   line-height:44px;
@@ -127,6 +127,8 @@ export default {
 {
   background-color:#000
 }
+
+
 .social-icons a.twitter:hover
 {
   background-color:#29aafe

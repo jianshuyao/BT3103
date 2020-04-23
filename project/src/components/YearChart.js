@@ -16,7 +16,8 @@ export default {
             options: {
                 title: {
                     display: true,
-                    text: 'Number of Students doing SEP each Year'
+                    text: 'Number of Students doing SEP each Year',
+                    fontSize: 16
                 },
                 legend: {
                     display: false
