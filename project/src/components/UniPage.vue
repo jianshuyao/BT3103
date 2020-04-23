@@ -16,7 +16,7 @@
         <br>
         <div class="info-table table3">
           <a v-bind:href="info.website">
-            <div>Learn More</div>
+            Learn More
           </a>
       </div>
     </div>
@@ -147,6 +147,8 @@ body{
 .info-header{
   position: relative;
   margin-bottom: 10px;
+  background-color: #099453 !important;
+  color: white !important;
 }
 
 .price{
@@ -171,6 +173,7 @@ body{
 
 .info-list{
   padding: 5px 20px;
+  background-color: rgb(245, 245, 245) !important;
 }
 
 .info-list li{
@@ -184,6 +187,10 @@ body{
   width: 80px;
   height: 1px;
   margin: auto;
+}
+
+.info-table{
+  background-color: rgb(245, 245, 245) !important;
 }
 
 .info-table a{
