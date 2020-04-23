@@ -437,12 +437,13 @@ font-size: 1.5rem;
 
 .cards-2 .button-container:hover {
   background-color: transparent !important;
-	color: #14bf98 !important;
+  color: #14bf98 !important;
+  cursor: pointer !important;
 }
 
 .filterButton:hover {
 	background-color: transparent;
-	color: #14bf98;
+  color: #14bf98;
 }
 
 .Row {
