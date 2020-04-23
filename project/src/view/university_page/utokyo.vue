@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="unipage-image">
-        <img src="./assets/utokyo.jpg" class="img-thumbnail" height="300" width="2000">
+        <img src="./assets/utokyo.png" class="img-thumbnail" height="300" width="2000">
     </div>
    
     <Unipage :university="university"></Unipage>
