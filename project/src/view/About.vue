@@ -7,7 +7,7 @@
                   <div class="col-lg-12"><h2>Who we are</h2></div> <!-- end of col -->
                   <h6>We are Team Withdrawal- the group of NUS Students behind the “SEP Searcher”!
                       We have designed our platform to address the issues students face when searching for
-                      student exchange placements and in this way, ensure a smooth journey for all our applicants.</h6>
+                      student exchange placements and in this way, ensure a smooth journey for all</h6>
               </div> <!-- end of row -->
 
               <div class="row">
@@ -32,8 +32,7 @@
                 <h2>What we offer</h2>
                 <div class="item" v-for="(fcn,index) in functions" v-bind:key="fcn.id">
                     <span aria-expanded="true" >
-                        <span class="circle-numbering">{{index+1}}</span>
-                        <span class="accordion-title">{{fcn.text}}</span>
+                        <span class="accordion-title"><span class="circle-numbering">{{index+1}}</span>{{fcn.text}}</span>
                     </span>
                 </div> 
             </div> 
@@ -48,8 +47,7 @@
                 <h2>Why choose us</h2><br>     
                 <div class="item" v-for="(bnf,index) in benefits" v-bind:key="bnf.id">
                     <span aria-expanded="true">
-                        <span class="circle-numbering">{{index+1}}</span>
-                        <span class="accordion-title">{{bnf.text}}</span>
+                        <span class="accordion-title"><span class="circle-numbering">{{index+1}}</span>{{bnf.text}}</span>
                     </span>                    
                 </div> 
             </div>
@@ -104,7 +102,7 @@ created(){
 @import './css/styles.css'; 
 img {
     width:540px !important; /* you can use % */
-    height: auto !important;
+    height: 120px !important;
 }
 .basic-2 .team-member {
 	display: inline-block !important;
@@ -114,12 +112,12 @@ img {
 	margin-left: 1.5rem !important;
 }
 .basic-2 .team-member .p-large {
-	margin-bottom: 0.25rem !important;
+    margin-bottom: 0.25rem !important;
+    font: 400 1.5rem/1.375rem "Montserrat", sans-serif !important;
 }
 .basic-2 .team-member .job-title {
 	margin-bottom: 0.75rem !important;
 	color: #484a46 !important;
-	font: 700 1rem/1.375rem "Montserrat", sans-serif !important;
+	font: 700 1.5rem/1.375rem "Montserrat", sans-serif !important;
 }
-
 </style>

@@ -57,18 +57,11 @@
 
 <script>
   export default {
-    name: 'Contact',
-    data(){
-      return {
-        name: 'JSY',
-        email: 'jianshuyao@u.nus.edu'
-      }
-    }
+
   }
 </script>
 
 <style scoped>
-
 .form-group {
   color: black !important;
 }
@@ -81,5 +74,7 @@
 .text-container{
     text-align: center !important;
 }
-
+html{
+    font-size: 300% !important;  
+}
 </style>
