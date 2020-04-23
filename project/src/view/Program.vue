@@ -431,7 +431,13 @@ font-size: 1.5rem;
 
 .cards-2 .button-container {
 	margin-top: -1.375rem;
-	text-align: center;
+  text-align: center;
+  color: #fff !important;
+}
+
+.cards-2 .button-container:hover {
+  background-color: transparent !important;
+	color: #14bf98 !important;
 }
 
 .filterButton:hover {
