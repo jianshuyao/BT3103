@@ -166,7 +166,7 @@ export default {
   margin: auto;
   position: absolute;
   font-size: 35px;
-  top: 25%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -186,7 +186,7 @@ export default {
   text-align: center;
   position: absolute;
   font-size: 22px;
-  top: 37%;
+  top: 32%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -219,7 +219,7 @@ export default {
 
 .centered2 {
   position: absolute;
-  top: 57%;
+  top: 53%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
