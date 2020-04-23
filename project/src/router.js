@@ -1,7 +1,7 @@
 import Home from './view/Home.vue'
 import About from './view/About.vue'
 import Contact from './view/Contact.vue'
-import University from './view/University.vue'
+import Program from './view/Program.vue'
 import ETHZ from './view/university_page/ethz.vue'
 import FDU from './view/university_page/fdu.vue'
 import ICL from './view/university_page/icl.vue'
@@ -24,7 +24,7 @@ export default[
     },
     {
       path: '/Program',
-      component: University 
+      component: Program 
     },
     {
       path: '/About',

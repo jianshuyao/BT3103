@@ -22,7 +22,7 @@
     </div>
 
     <div class = "content">
-        <h3 style="text-align:center;">Student Exchange Programme</h3>
+        <h3 class="sep-title" >Student Exchange Programme</h3>
         <div class="sep-content">
         The Student Exchange Programme (SEP) is the largest and most established global programme in NUS. Through the development and management of strategic and sustainable partnerships with a wide range of renowned universities globally, the Global Relations Office (GRO) strives to ensure a quality exchange experience for all our outgoing and incoming students. More than 90% of both outgoing and incoming students are highly satisfied with their SEP experiences. Furthermore, more than 95% of our overseas SEP alumni would recommend NUS to their peers at their home universities, while almost all returned SEP exchangers would gladly participate in SEP again, if given the chance.
         </div>
@@ -31,7 +31,7 @@
         NUS students are able to choose from over 300 partner universities from more than 40 countries for their SEP experience. In AY 2017/18, approximately 2,000 NUS students embarked on SEP while close to 2,000 incoming students were received from our partner universities. We welcome students to participate in exchange programmes in order to broaden their horizons and gain a variety of essential soft skills in preparation for the world after graduation.
         </div>
         <br>
-      <h3 style="text-align:center; font-size:20px;">SEP Searcher Statistics Dashboard</h3>
+      <h3 class="sep-title">SEP Searcher Statistics Dashboard</h3>
       
       <div class="chart-row">
         <div class="chart-column">
@@ -252,6 +252,11 @@ h3 {
   padding-bottom: 5px;
   padding-top: 5px;
   line-height: 1.5;
+}
+
+.sep-title{
+  font-size:20px !important;
+  text-align:center;
 }
 
 .chart-column{
