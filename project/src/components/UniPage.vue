@@ -62,7 +62,7 @@
           <br>
           <div class="border"></div>
           <li><strong class="list-title">Cost of Living</strong></li>
-            <div class="list-content"><center>Please refer to <a href= 'http://eap.ucop.edu/guides/reciprocity/Pages/default.aspx'>View Cost of Living</a> (and click on ‘Money Matters’): </center></div>
+            <div class="list-content"><center>{{info.cost_of_living}}</center></div>
             <br>
           <div class="border"></div>
           <li><strong class="list-title">Weather</strong></li>
