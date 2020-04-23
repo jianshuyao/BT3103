@@ -9,7 +9,7 @@ html {
 
 body, p {
 	color: #787976 ; 
-	font: 400 1rem/1.5625rem "Open Sans", sans-serif ;
+	font: 400 1.5rem/1.5625rem "Open Sans", sans-serif ;
 }
 
 .p-large {
@@ -73,7 +73,7 @@ a {
 }
 
 a:hover {
-	color: #787976 ;
+	/* color: #787976 ; */
 	text-decoration: underline ;
 }
 
@@ -103,7 +103,7 @@ strong {
 	border-radius: 0.25rem ;
 	background-color: #14bf98 ;
 	color: #fff ;
-	font: 700 0.75rem/0 "Montserrat", sans-serif ;
+	font: 700 1.2rem/0 "Montserrat", sans-serif ;
 	text-decoration: none ;
 	transition: all 0.2s ;
 }

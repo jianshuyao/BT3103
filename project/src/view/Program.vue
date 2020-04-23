@@ -48,7 +48,7 @@
                       :max="max"
                       :step="step"
                       :ticks="rangeticks"></ejs-slider>
-          <p>Filtered Program Length: {{filterLength[0]}} ~ {{filterLength[1]}} Months</p>
+          <p class='filterContent'>Filtered Program Length: {{filterLength[0]}} ~ {{filterLength[1]}} Months</p>
         <br>
 
         </div>
@@ -68,8 +68,11 @@
                       <img class="img-fluid" :src="university.introPic">
                        </div>
                     <h3 class="card-title">{{ university.university }}</h3>
-                    <p>{{ university.location }}</p>
-                    <span class="month">{{ university.semesterLength}} Months </span>
+                    <p>
+                      {{ university.location }} • 
+                      <span class="month">{{ university.semesterLength}} Months </span>
+                      </p>
+                    
                   </div>
                   <div class="button-container">
                       <a class="btn-solid-reg page-scroll" @click="goToUniLink(university)">DETAILS</a>
@@ -258,6 +261,12 @@ body {
   /* font-family: 'Open Sans', sans-serif; */
 }
 
+.filterContent{
+  font: 500 1.5rem/1.75rem "Montserrat", sans-serif;
+  color: #fbfbfb;
+  margin-top: 1.5rem;
+}
+
 .box {
   /* display: flex;
   flex-direction: column; */
@@ -304,11 +313,11 @@ body {
   text-decoration: none;
   display: inline-block;
 	width: 100%;
-	height: 3.125rem;
+	height: 5.125rem;
 	border: 0.125rem solid #14bf98;
 	border-radius: 0.25rem;
 	background-color: #14bf98;
-	font: 500 1rem/1.75rem "Montserrat", sans-serif;
+	font: 500 1.5rem/1.75rem "Montserrat", sans-serif;
 	cursor: pointer;
 	transition: all 0.2s;
 }
@@ -339,7 +348,7 @@ body {
 
 /* Services */
 .cards-2 .card {
-  max-width: 18.25rem;
+  width: 30%;
   display: inline-block;
   vertical-align: top;
 }
@@ -375,17 +384,23 @@ border: none;
 background-color: transparent;
 }
 
+.card-title{
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
 .cards-2 .card-body {
 padding: 2.25rem 2rem 2.125rem 2rem;
 border: 1px solid #ebe8e8;
 border-bottom-left-radius: 0.375rem;
 border-bottom-right-radius: 0.375rem;
 background-color: #fff;
+height: 28rem;
 }
 
 .cards-2 h3 {
 text-align: center;
-font-size: 1rem;
+font-size: 1.5rem;
 }
 
 
@@ -398,13 +413,12 @@ line-height: 1.375rem;
 .month {
 color: #14bf98;
 font: 700 1rem/1.5rem "Montserrat", sans-serif;
-font-size: 1rem;
-margin-left: 4.75rem;
+font-size: 1.5rem;
 }
 
 
 .cards-2 .col-lg-12 {
-		margin-left: 2rem;
+		text-align: center;
   }
   
 .cards-2 .card-image img {
@@ -413,16 +427,11 @@ margin-left: 4.75rem;
   width: 150px;
   height: 150px;
   align-self: center;
-  margin-left: 2.1rem;
 }
 
 .cards-2 .button-container {
 	margin-top: -1.375rem;
 	text-align: center;
-}
-
-.filterButton {
-
 }
 
 .filterButton:hover {
@@ -435,6 +444,7 @@ margin-left: 4.75rem;
     width: 100%; /*Optional*/
     table-layout: fixed; /*Optional*/
     border-spacing: 10px; /*Optional*/
+    font: 700 1.2rem/0 "Montserrat", sans-serif;
 }
 .Col {
     display: table-cell;
@@ -445,8 +455,11 @@ margin-left: 4.75rem;
     border: 0.125rem solid #eb9a31;
     border-radius: 0.25rem;
     background-color: #eb9a31;
-    font: 500 1rem/1.75rem "Montserrat", sans-serif;
+    font: 500 1.5rem/1.75rem "Montserrat", sans-serif;
     cursor: pointer;
     transition: all 0.2s; 
+}
+.form-control{
+  font-size: 1.5rem;
 }
 </style>
