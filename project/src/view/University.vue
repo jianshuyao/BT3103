@@ -66,7 +66,7 @@
                   <div class="card-body">
                     <div class="card-image" >
                       <img class="img-fluid" :src="university.introPic">
-                      </div>
+                       </div>
                     <h3 class="card-title">{{ university.university }}</h3>
                     <p>{{ university.location }}</p>
                     <span class="month">{{ university.semesterLength}} Months </span>
@@ -78,29 +78,7 @@
 
           </div> <!-- end of col -->
 
-        <li @click="goToUniLink(university)" 
-            v-for="university in getUniversities" v-bind:key="university.id">
-
-        <!-- https://stackoverflow.com/questions/54863355/vuejs-apply-loop-in-css-to-put-hover -->
-        <div @mouseover="university.hover=true"
-             @mouseleave="university.hover=false"
-             :style="{background: university.hover? university.background_hover : university.background}">
-          
-          <div class="box"> 
-            <img class = "introPic" :src="university.introPic" alt="Program Picture">
-            <div> {{ university.university }} </div>
-            <div class="box__subtitle"> {{ university.location }} </div>
-            <div class="box__subtitle"> {{ university.semesterLength}} Months </div>
-            {{university.background_hover}}
-            <!-- <router-link v-bind:to = "'/'+ university.link" exact >Go to University Page</router-link> -->
-          </div>
-        </div>
-        </li>
-
-        <div v-if="getUniversities.length === 0" >
-            <div class="box box__empty"> No Match Found</div>
-        </div>
-
+        
       </div>
 
     </ul>
@@ -270,13 +248,13 @@ export default {
 $material-shadow: 0 1px 3px 0 rgba(0,0,0,0.15);
 
 [v-cloak] {
-  display: none;
+  display: none !important;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  background-color: #F3F5F7;
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: #F3F5F7 !important;
   /* font-family: 'Open Sans', sans-serif; */
 }
 
@@ -286,31 +264,32 @@ body {
   /* justify-content: center; */
   /* align-items: center; */
   /* box-shadow: $material-shadow; */
-  font: bold 12px/30px;
-  min-height: 150px;
-  border-radius: 5px;
-  background-color: white;
-  margin-bottom: 10px;
+  font: bold 12px/30px !important;
+  min-height: 150px !important;
+  border-radius: 5px !important;
+  background-color: white !important;
+  margin-bottom: 10px !important;
   &__subtitle { 
-    color: lighten(grey, 15%); 
+    color: lighten(grey, 15%) !important; 
   }
   &__empty {
-    background-color: transparent; box-shadow: none 
+    background-color: transparent !important; 
+    box-shadow: none !important;
   }
-  &:hover { cursor: pointer; }
+  &:hover { cursor: pointer !important; }
 }
 
 .introPic {
-  float: left;
-  width: 150px;
-  height: 150px;
+  float: left !important;
+  width: 150px !important;
+  height: 150px !important;
 }
 
 .uni_container {
-  max-width: 980px;
-  margin: 20px auto;
-  @media screen and (max-width: 1050px) { 
-    width: 95%; 
+  max-width: 980px !important;
+  margin: 20px auto !important;
+  @media screen and (max-width: 1050px !important) { 
+    width: 95% !important; 
   }
 }
 
@@ -319,127 +298,127 @@ body {
 } */
 
 .filterButton {
-  padding: 13px 23px;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-	width: 100%;
-	height: 3.125rem;
-	border: 0.125rem solid #14bf98;
-	border-radius: 0.25rem;
-	background-color: #14bf98;
-	font: 500 1rem/1.75rem "Montserrat", sans-serif;
-	cursor: pointer;
-	transition: all 0.2s;
+  padding: 13px 23px !important;
+  color: white !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  display: inline-block !important;
+	width: 100% !important;
+	height: 3.125rem !important;
+	border: 0.125rem solid #14bf98 !important;
+	border-radius: 0.25rem !important;
+	background-color: #14bf98 !important;
+	font: 500 1rem/1.75rem "Montserrat", sans-serif !important;
+	cursor: pointer !important;
+	transition: all 0.2s !important;
 }
 
 .locFilter {
   overflow-x: visible !important;
   overflow-y: visible !important;
-  z-index: 1;
-  display: block;
-  position:relative;
-  margin-bottom: 1.5rem;
+  z-index: 1 !important;
+  display: block !important;
+  position:relative !important;
+  margin-bottom: 1.5rem !important;
   
 }
 
 .lengthFilter {
-  z-index: -2;
-  overflow: hidden;
-  position:relative;
-  margin-bottom: 1.5rem;
+  z-index: -2 !important;
+  overflow: hidden !important;
+  position:relative !important;
+  margin-bottom: 1.5rem !important;
 
 }
 
 #range {
-  z-index: -10;
+  z-index: -10 !important;
  
-  position:relative;
+  position:relative !important; 
 }
 
 /* Services */
 .cards-2 .card {
-  max-width: 18.25rem;
-  display: inline-block;
-  vertical-align: top;
+  max-width: 18.25rem !important;
+  display: inline-block !important;
+  vertical-align: top !important;
 }
 
 .cards-2 .col-lg-12 div.card:nth-child(3n+2) {
-  margin-right: 1.25rem;
-  margin-left: 1.25rem;
+  margin-right: 1.25rem !important;
+  margin-left: 1.25rem !important;
 }
 /* end of services */
 
 .cards-2 {
 /* padding-top: 6.625rem;	
 padding-bottom: 1.25rem;	 */
-background-color: #fbfbfb;
+background-color: #fbfbfb !important;
 }
 
 .cards-2 .section-title {
 /* margin-bottom: 0.5rem; */
-text-align: center;
+text-align: center !important;
 }
 
 .cards-2 h2 {
-text-align: center;
+text-align: center !important;
 }
 
 .cards-2 p {
-text-align: center;
+text-align: center !important;
 }
 
 .cards-2 .card {
-margin-bottom: 1.625rem;
-border: none;
-background-color: transparent;
+margin-bottom: 1.625rem !important;
+border: none !important;
+background-color: transparent !important;
 }
 
 .cards-2 .card-body {
-padding: 2.25rem 2rem 2.125rem 2rem;
-border: 1px solid #ebe8e8;
-border-bottom-left-radius: 0.375rem;
-border-bottom-right-radius: 0.375rem;
-background-color: #fff;
+padding: 2.25rem 2rem 2.125rem 2rem !important;
+border: 1px solid #ebe8e8 !important;
+border-bottom-left-radius: 0.375rem !important;
+border-bottom-right-radius: 0.375rem !important;
+background-color: #fff !important;
 }
 
 .cards-2 h3 {
-text-align: center;
-font-size: 1rem;
+text-align: center !important;
+font-size: 1rem !important;
 }
 
 
 .cards-2 .list-unstyled .fas {
-color: #14bf98;
-font-size: 0.5rem;
-line-height: 1.375rem;
+color: #14bf98 !important;
+font-size: 0.5rem !important;
+line-height: 1.375rem !important;
 }
 
 .month {
-color: #14bf98;
-font: 700 1rem/1.5rem "Montserrat", sans-serif;
-font-size: 1rem;
-margin-left: 4.75rem;
+color: #14bf98 !important;
+font: 700 1rem/1.5rem "Montserrat", sans-serif !important;
+font-size: 1rem !important;
+margin-left: 4.75rem !important;
 }
 
 
 .cards-2 .col-lg-12 {
-		margin-left: 2rem;
+		margin-left: 2rem !important;
   }
   
 .cards-2 .card-image img {
-	border-top-left-radius: 0.375rem;
-  border-top-right-radius: 0.375rem;
-  width: 150px;
-  height: 150px;
-  align-self: center;
-  margin-left: 2.1rem;
+	border-top-left-radius: 0.375rem !important;
+  border-top-right-radius: 0.375rem !important;
+  width: 150px !important;
+  height: 150px !important;
+  align-self: center !important;
+  margin-left: 2.1rem !important;
 }
 
 .cards-2 .button-container {
-	margin-top: -1.375rem;
-	text-align: center;
+	margin-top: -1.375rem !important;
+	text-align: center !important;
 }
 
 .filterButton {
@@ -447,27 +426,27 @@ margin-left: 4.75rem;
 }
 
 .filterButton:hover {
-	background-color: transparent;
-	color: #14bf98;
+	background-color: transparent !important;
+	color: #14bf98 !important;
 }
 
 .Row {
-    display: table;
-    width: 100%; /*Optional*/
-    table-layout: fixed; /*Optional*/
-    border-spacing: 10px; /*Optional*/
+    display: table !important;
+    width: 100% !important; /*Optional*/
+    table-layout: fixed !important; /*Optional*/
+    border-spacing: 10px !important; /*Optional*/
 }
 .Col {
-    display: table-cell;
-    text-align: center;
-    padding: 13px 23px;
-    color: white;
-    height: 3.125rem;
-    border: 0.125rem solid #eb9a31;
-    border-radius: 0.25rem;
-    background-color: #eb9a31;
-    font: 500 1rem/1.75rem "Montserrat", sans-serif;
-    cursor: pointer;
-    transition: all 0.2s; 
+    display: table-cell !important;
+    text-align: center !important;
+    padding: 13px 23px !important;
+    color: white !important;
+    height: 3.125rem !important;
+    border: 0.125rem solid #eb9a31 !important;
+    border-radius: 0.25rem !important;
+    background-color: #eb9a31 !important;
+    font: 500 1rem/1.75rem "Montserrat", sans-serif !important;
+    cursor: pointer !important;
+    transition: all 0.2s !important; 
 }
 </style>
