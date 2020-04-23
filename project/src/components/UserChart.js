@@ -18,6 +18,10 @@ export default {
                     text: 'Rating of SEP Searcher platform by Users (mean rating = 4.06)',
                     fontSize: 16
                 },
+                legend:{
+                    position: "left",
+                    align: "start"
+                },
                 responsive: true,
                 maintainAspectRatio: false
             }

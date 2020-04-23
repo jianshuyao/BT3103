@@ -166,7 +166,7 @@ export default {
   margin: auto;
   position: absolute;
   font-size: 35px;
-  top: 25%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -186,7 +186,7 @@ export default {
   text-align: center;
   position: absolute;
   font-size: 22px;
-  top: 37%;
+  top: 32%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -219,16 +219,9 @@ export default {
 
 .centered2 {
   position: absolute;
-  top: 57%;
+  top: 53%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-h3 {
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font: 20px "Lato", sans-serif !important;
-  color: #111;
 }
 
 .caption {
@@ -255,8 +248,10 @@ h3 {
 }
 
 .sep-title{
-  font-size:20px !important;
+  font-size:19px !important;
   text-align:center;
+  text-transform: uppercase;
+  letter-spacing: 2px !important;
 }
 
 .chart-column{

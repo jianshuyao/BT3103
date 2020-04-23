@@ -248,13 +248,13 @@ export default {
 $material-shadow: 0 1px 3px 0 rgba(0,0,0,0.15);
 
 [v-cloak] {
-  display: none !important;
+  display: none;
 }
 
 body {
-  margin: 0 !important;
-  padding: 0 !important;
-  background-color: #F3F5F7 !important;
+  margin: 0;
+  padding: 0;
+  background-color: #F3F5F7;
   /* font-family: 'Open Sans', sans-serif; */
 }
 
@@ -264,32 +264,32 @@ body {
   /* justify-content: center; */
   /* align-items: center; */
   /* box-shadow: $material-shadow; */
-  font: bold 12px/30px !important;
-  min-height: 150px !important;
-  border-radius: 5px !important;
-  background-color: white !important;
-  margin-bottom: 10px !important;
+  font: bold 12px/30px;
+  min-height: 150px;
+  border-radius: 5px;
+  background-color: white;
+  margin-bottom: 10px;
   &__subtitle { 
-    color: lighten(grey, 15%) !important; 
+    color: lighten(grey, 15%); 
   }
   &__empty {
-    background-color: transparent !important; 
-    box-shadow: none !important;
+    background-color: transparent; 
+    box-shadow: none;
   }
-  &:hover { cursor: pointer !important; }
+  &:hover { cursor: pointer; }
 }
 
 .introPic {
-  float: left !important;
-  width: 150px !important;
-  height: 150px !important;
+  float: left;
+  width: 150px;
+  height: 150px;
 }
 
 .uni_container {
-  max-width: 980px !important;
-  margin: 20px auto !important;
+  max-width: 980px;
+  margin: 20px auto;
   @media screen and (max-width: 1050px !important) { 
-    width: 95% !important; 
+    width: 95%; 
   }
 }
 
@@ -298,127 +298,127 @@ body {
 } */
 
 .filterButton {
-  padding: 13px 23px !important;
-  color: white !important;
-  text-align: center !important;
-  text-decoration: none !important;
-  display: inline-block !important;
-	width: 100% !important;
-	height: 3.125rem !important;
-	border: 0.125rem solid #14bf98 !important;
-	border-radius: 0.25rem !important;
-	background-color: #14bf98 !important;
-	font: 500 1rem/1.75rem "Montserrat", sans-serif !important;
-	cursor: pointer !important;
-	transition: all 0.2s !important;
+  padding: 13px 23px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+	width: 100%;
+	height: 3.125rem;
+	border: 0.125rem solid #14bf98;
+	border-radius: 0.25rem;
+	background-color: #14bf98;
+	font: 500 1rem/1.75rem "Montserrat", sans-serif;
+	cursor: pointer;
+	transition: all 0.2s;
 }
 
 .locFilter {
-  overflow-x: visible !important;
-  overflow-y: visible !important;
-  z-index: 1 !important;
-  display: block !important;
-  position:relative !important;
-  margin-bottom: 1.5rem !important;
+  overflow-x: visible;
+  overflow-y: visible;
+  z-index: 1;
+  display: block;
+  position:relative;
+  margin-bottom: 1.5rem;
   
 }
 
 .lengthFilter {
-  z-index: -2 !important;
-  overflow: hidden !important;
-  position:relative !important;
-  margin-bottom: 1.5rem !important;
+  z-index: -2;
+  overflow: hidden;
+  position:relative;
+  margin-bottom: 1.5rem;
 
 }
 
 #range {
-  z-index: -10 !important;
+  z-index: -10;
  
-  position:relative !important; 
+  position:relative; 
 }
 
 /* Services */
 .cards-2 .card {
-  max-width: 18.25rem !important;
-  display: inline-block !important;
-  vertical-align: top !important;
+  max-width: 18.25rem;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .cards-2 .col-lg-12 div.card:nth-child(3n+2) {
-  margin-right: 1.25rem !important;
-  margin-left: 1.25rem !important;
+  margin-right: 1.25rem;
+  margin-left: 1.25rem;
 }
 /* end of services */
 
 .cards-2 {
 /* padding-top: 6.625rem;	
 padding-bottom: 1.25rem;	 */
-background-color: #fbfbfb !important;
+background-color: #fbfbfb;
 }
 
 .cards-2 .section-title {
 /* margin-bottom: 0.5rem; */
-text-align: center !important;
+text-align: center;
 }
 
 .cards-2 h2 {
-text-align: center !important;
+text-align: center;
 }
 
 .cards-2 p {
-text-align: center !important;
+text-align: center;
 }
 
 .cards-2 .card {
-margin-bottom: 1.625rem !important;
-border: none !important;
-background-color: transparent !important;
+margin-bottom: 1.625rem;
+border: none;
+background-color: transparent;
 }
 
 .cards-2 .card-body {
-padding: 2.25rem 2rem 2.125rem 2rem !important;
-border: 1px solid #ebe8e8 !important;
-border-bottom-left-radius: 0.375rem !important;
-border-bottom-right-radius: 0.375rem !important;
-background-color: #fff !important;
+padding: 2.25rem 2rem 2.125rem 2rem;
+border: 1px solid #ebe8e8;
+border-bottom-left-radius: 0.375rem;
+border-bottom-right-radius: 0.375rem;
+background-color: #fff;
 }
 
 .cards-2 h3 {
-text-align: center !important;
-font-size: 1rem !important;
+text-align: center;
+font-size: 1rem;
 }
 
 
 .cards-2 .list-unstyled .fas {
-color: #14bf98 !important;
-font-size: 0.5rem !important;
-line-height: 1.375rem !important;
+color: #14bf98;
+font-size: 0.5rem;
+line-height: 1.375rem;
 }
 
 .month {
-color: #14bf98 !important;
-font: 700 1rem/1.5rem "Montserrat", sans-serif !important;
-font-size: 1rem !important;
-margin-left: 4.75rem !important;
+color: #14bf98;
+font: 700 1rem/1.5rem "Montserrat", sans-serif;
+font-size: 1rem;
+margin-left: 4.75rem;
 }
 
 
 .cards-2 .col-lg-12 {
-		margin-left: 2rem !important;
+		margin-left: 2rem;
   }
   
 .cards-2 .card-image img {
-	border-top-left-radius: 0.375rem !important;
-  border-top-right-radius: 0.375rem !important;
-  width: 150px !important;
-  height: 150px !important;
-  align-self: center !important;
-  margin-left: 2.1rem !important;
+	border-top-left-radius: 0.375rem;
+  border-top-right-radius: 0.375rem;
+  width: 150px;
+  height: 150px;
+  align-self: center;
+  margin-left: 2.1rem;
 }
 
 .cards-2 .button-container {
-	margin-top: -1.375rem !important;
-	text-align: center !important;
+	margin-top: -1.375rem;
+	text-align: center;
 }
 
 .filterButton {
@@ -426,27 +426,27 @@ margin-left: 4.75rem !important;
 }
 
 .filterButton:hover {
-	background-color: transparent !important;
-	color: #14bf98 !important;
+	background-color: transparent;
+	color: #14bf98;
 }
 
 .Row {
-    display: table !important;
-    width: 100% !important; /*Optional*/
-    table-layout: fixed !important; /*Optional*/
-    border-spacing: 10px !important; /*Optional*/
+    display: table;
+    width: 100%; /*Optional*/
+    table-layout: fixed; /*Optional*/
+    border-spacing: 10px; /*Optional*/
 }
 .Col {
-    display: table-cell !important;
-    text-align: center !important;
-    padding: 13px 23px !important;
-    color: white !important;
-    height: 3.125rem !important;
-    border: 0.125rem solid #eb9a31 !important;
-    border-radius: 0.25rem !important;
-    background-color: #eb9a31 !important;
-    font: 500 1rem/1.75rem "Montserrat", sans-serif !important;
-    cursor: pointer !important;
-    transition: all 0.2s !important; 
+    display: table-cell;
+    text-align: center;
+    padding: 13px 23px;
+    color: white;
+    height: 3.125rem;
+    border: 0.125rem solid #eb9a31;
+    border-radius: 0.25rem;
+    background-color: #eb9a31;
+    font: 500 1rem/1.75rem "Montserrat", sans-serif;
+    cursor: pointer;
+    transition: all 0.2s; 
 }
 </style>
