@@ -307,19 +307,19 @@ body {
 } */
 
 .filterButton {
-  padding: 13px 23px;
   color: white;
   text-align: center;
   text-decoration: none;
   display: inline-block;
 	width: 100%;
-	height: 5.125rem;
+	height: 3.125rem;
 	border: 0.125rem solid #14bf98;
 	border-radius: 0.25rem;
 	background-color: #14bf98;
 	font: 500 1.5rem/1.75rem "Montserrat", sans-serif;
 	cursor: pointer;
-	transition: all 0.2s;
+  transition: all 0.2s;
+  margin-top: 1.5rem;
 }
 
 .locFilter {
