@@ -30,7 +30,6 @@
         <div class="sep-content">
         NUS students are able to choose from over 300 partner universities from more than 40 countries for their SEP experience. In AY 2017/18, approximately 2,000 NUS students embarked on SEP while close to 2,000 incoming students were received from our partner universities. We welcome students to participate in exchange programmes in order to broaden their horizons and gain a variety of essential soft skills in preparation for the world after graduation.
         </div>
-        <br>
       <h3 class="sep-title">SEP Searcher Statistics Dashboard</h3>
       
       <div class="chart-row">
@@ -206,7 +205,7 @@ export default {
   color: #777;
   background-color:white;
   text-align:center;
-  padding:50px 80px;
+  padding: 0 80px 50px 80px;
   text-align: justify;
 }
 
@@ -242,7 +241,7 @@ export default {
 
 .sep-content{
   font-size:16px !important;
-  padding-bottom: 5px;
+  padding-bottom: 15px;
   padding-top: 5px;
   line-height: 1.5;
 }
@@ -252,6 +251,7 @@ export default {
   text-align:center;
   text-transform: uppercase;
   letter-spacing: 2px !important;
+  padding-top: 30px
 }
 
 .chart-column{
