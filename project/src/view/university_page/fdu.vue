@@ -8,7 +8,7 @@
 
     
     <div class="info-table table3">
-        <router-link to="/University">Go Back to Programme list</router-link>
+        <router-link to="/Program">Go Back to Programme list</router-link>
     </div>
 
   </div>
