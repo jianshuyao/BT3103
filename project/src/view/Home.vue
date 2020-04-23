@@ -224,13 +224,6 @@ export default {
   transform: translate(-50%, -50%);
 }
 
-h3 {
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font: 20px "Lato", sans-serif !important;
-  color: #111;
-}
-
 .caption {
   position: absolute;
   left: 0;
@@ -255,8 +248,10 @@ h3 {
 }
 
 .sep-title{
-  font-size:20px !important;
+  font-size:19px !important;
   text-align:center;
+  text-transform: uppercase;
+  letter-spacing: 2px !important;
 }
 
 .chart-column{

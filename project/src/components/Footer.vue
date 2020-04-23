@@ -97,7 +97,7 @@ export default {
 }
 
 .social-icons a{
-  background-color:#828282;
+  background-color:#828282 !important;
   color:#fff !important;
   font-size:25px;
   display:inline-block;
@@ -109,29 +109,29 @@ export default {
   border-radius:100%;
   -webkit-transition:all .2s linear;
   -o-transition:all .2s linear;
-  transition:all .2s linear
+  transition:all .2s linear;
 }
 .social-icons a:active,.social-icons a:focus,.social-icons a:hover
 {
-  color:#fff;
-  background-color:#29aafe;
+  color:#fff !important;
+  background-color:#29aafe !important;
 }
 .social-icons.size-sm a
 {
-  line-height:34px;
-  height:auto;
-  width:34px;
-  font-size:14px
+  line-height:34px !important;
+  height:auto !important;
+  width:34px !important;
+  font-size:14px !important;
 }
 .social-icons a.github:hover
 {
-  background-color:#000
+  background-color:#000 !important;
 }
 
 
 .social-icons a.twitter:hover
 {
-  background-color:#29aafe
+  background-color:#29aafe !important;
 }
 
 /* @media (max-width:767px)
