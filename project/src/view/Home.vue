@@ -251,7 +251,8 @@ export default {
   text-align:center;
   text-transform: uppercase;
   letter-spacing: 2px !important;
-  padding-top: 30px
+  padding-top: 30px;
+  padding-bottom: 5px
 }
 
 .chart-column{
